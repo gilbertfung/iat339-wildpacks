@@ -160,11 +160,12 @@ section .section-header {
 }
 
 .listing-item {
-
+  display: inline-block;
 }
 
 .listing-item h4 {
   margin-bottom: 0;
+  font-weight: bold;
 }
 
 .listing-item p {

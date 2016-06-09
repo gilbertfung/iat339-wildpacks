@@ -269,127 +269,119 @@
       <h3>Product Listing</h3>
 
       <h4>Sample code:</h4>
-      <pre><code>
-&lt;header class="listing-header"&gt;
-  &lt;h3&gt;Get Inspired.
-    &lt;nav class="listing-nav"&gt;
-      &lt;select name="sortby"&gt;
-        &lt;option&gt;Popular&lt;/option&gt;
-        &lt;option&gt;Most recent&lt;/option&gt;
-        &lt;option&gt;Most saved&lt;/option&gt;
-      &lt;/select&gt;
-      &lt;a href="#" class="button button-submit"&gt;Update&lt;/a&gt;
-    &lt;/nav&gt;
-  &lt;/h3&gt;
-&lt;/header&gt;
-
-&lt;div class="grid"&gt;
+      <pre><code>&lt;div class="grid"&gt;
   &lt;div class="grid-3-12"&gt;
-    &lt;h4&gt;FILTERS&lt;/h4&gt;
-    &lt;form action="" class="form-filter"&gt;
-      &lt;label &gt;Type&lt;/label&gt;
-      &lt;select name="type"&gt;
+    &lt;h4&gt;Filter:&lt;/h4&gt;
+    &lt;form action="#" class="form-filter"&gt;
+      &lt;input type="checkbox" name="filter-waterproof" id="filter-waterproof"&gt;&lt;label for="filter-waterproof"&gt;Waterproof&lt;/label&gt;&lt;br&gt;
+      &lt;input type="checkbox" name="filter-laptop" id="filter-laptop"&gt;&lt;label for="filter-laptop"&gt;Supports laptop&lt;/label&gt;&lt;br&gt;
+      &lt;input type="checkbox" name="filter-straps" id="filter-straps"&gt;&lt;label for="filter-straps"&gt;Straps&lt;/label&gt;&lt;br&gt;
+      &lt;input type="checkbox" name="filter-straps" id="filter-straps"&gt;&lt;label for="filter-straps"&gt;Device pocket&lt;/label&gt;&lt;br&gt;
+      &lt;select name="type" id="filter-type"&gt;
+        &lt;option disabled selected&gt;Select Type&lt;/option&gt;
+        &lt;option&gt;here is a filter&lt;/option&gt;
+        &lt;option&gt;here is a filter&lt;/option&gt;
+        &lt;option&gt;here is a filter&lt;/option&gt;
+      &lt;/select&gt;&lt;br&gt;
+      &lt;select name="type" id="filter-type"&gt;
+        &lt;option disabled selected&gt;Select Type&lt;/option&gt;
         &lt;option&gt;here is a filter&lt;/option&gt;
         &lt;option&gt;here is a filter&lt;/option&gt;
         &lt;option&gt;here is a filter&lt;/option&gt;
       &lt;/select&gt;
-      &lt;label &gt;Cards&lt;/label&gt;
-      &lt;input type="number" name="cards"&gt;
-      &lt;label &gt;Bills&lt;/label&gt;
-      &lt;input type="number" name="bills"&gt;
-
-      &lt;input class="button button-submit" type="submit" name="submit" value="Update"&gt;
     &lt;/form&gt;
   &lt;/div&gt;
   &lt;div class="grid-9-12 listings"&gt;
     &lt;div class="grid-4-12"&gt;
-      &lt;figure class="listing-item"&gt;
-        &lt;img src="img/products/bifold.jpg" alt=""&gt;
-        &lt;h4&gt;BIFOLD TYVEK&lt;/h4&gt;
-        &lt;p&gt;💳 10 💵 2&lt;/p&gt;
-      &lt;/figure&gt;
+      &lt;a class="listing-item" href="#"&gt;
+        &lt;figure&gt;
+          &lt;img src="img/products/topo_bag1.jpg" alt=""&gt;
+          &lt;h4&gt;Backpack 01&lt;/h4&gt;
+          &lt;p&gt;$165&lt;/p&gt;
+        &lt;/figure&gt;
+      &lt;/a&gt;
     &lt;/div&gt;
-...
+    ....
   &lt;/div&gt;
-&lt;/div&gt;
-      </code></pre>
+&lt;/div&gt;</code></pre>
       
       <h4>Rendered element:</h4>
-      <header class="listing-header">
-        <h3>Get Inspired.
-          <nav class="listing-nav">
-            <select name="sortby">
-              <option>Popular</option>
-              <option>Most recent</option>
-              <option>Most saved</option>
-            </select>
-            <a href="#" class="button button-submit">Update</a>
-          </nav>
-        </h3>
-      </header>
-
       <div class="grid">
         <div class="grid-3-12">
-          <h4>FILTERS</h4>
+          <h4>Filter:</h4>
           <form action="#" class="form-filter">
-            <label >Type</label>
-            <select name="type">
+            <input type="checkbox" name="filter-waterproof" id="filter-waterproof"><label for="filter-waterproof">Waterproof</label><br>
+            <input type="checkbox" name="filter-laptop" id="filter-laptop"><label for="filter-laptop">Supports laptop</label><br>
+            <input type="checkbox" name="filter-straps" id="filter-straps"><label for="filter-straps">Straps</label><br>
+            <input type="checkbox" name="filter-straps" id="filter-straps"><label for="filter-straps">Device pocket</label><br>
+            <select name="type" id="filter-type">
+              <option disabled selected>Select Type</option>
+              <option>here is a filter</option>
+              <option>here is a filter</option>
+              <option>here is a filter</option>
+            </select><br>
+            <select name="type" id="filter-type">
+              <option disabled selected>Select Type</option>
               <option>here is a filter</option>
               <option>here is a filter</option>
               <option>here is a filter</option>
             </select>
-            <br>
-            <label >Cards</label>
-            <input type="number" name="cards">
-            <br>
-            <label >Bills</label>
-            <input type="number" name="bills">
-
-            <input class="button button-submit" type="submit" name="submit" value="Update">
           </form>
         </div>
         <div class="grid-9-12 listings">
           <div class="grid-4-12">
-            <figure class="listing-item">
-              <img src="img/products/bifold.jpg" alt="">
-              <h4>BIFOLD TYVEK</h4>
-              <p>💳 10 💵 2</p>
-            </figure>
+            <a class="listing-item" href="#">
+              <figure>
+                <img src="img/products/topo_bag1.jpg" alt="a backpack">
+                <h4>Backpack 01</h4>
+                <p>$165</p>
+              </figure>
+            </a>
           </div>
           <div class="grid-4-12">
-            <figure class="listing-item">
-              <img src="img/products/single.jpg" alt="">
-            <h4>MINIMAL SINGLE</h4>
-            <p>💳 10 💵 2</p>
-            </figure>
+            <a class="listing-item" href="#">
+              <figure>
+                <img src="img/products/topo_bag2.jpg" alt="a backpack">
+                <h4>Backpack 02</h4>
+                <p>$165</p>
+              </figure>
+            </a>
           </div>
           <div class="grid-4-12">
-            <figure class="listing-item">
-              <img src="img/products/trifold.jpg" alt="">
-            <h4>CAMO TRIFOLD</h4>
-            <p>💳 10 💵 2</p>
-            </figure>
+            <a class="listing-item" href="#">
+              <figure>
+                <img src="img/products/topo_bag3.jpg" alt="a backpack">
+                <h4>Backpack 03</h4>
+                <p>$165</p>
+              </figure>
+            </a>
           </div>
           <div class="grid-4-12">
-            <figure class="listing-item">
-              <img src="img/products/bifold.jpg" alt="">
-              <h4>BIFOLD TYVEK</h4>
-              <p>💳 10 💵 2</p>
-            </figure>
+            <a class="listing-item" href="#">
+              <figure>
+                <img src="img/products/topo_bag1.jpg" alt="a backpack">
+                <h4>Backpack 04</h4>
+                <p>$165</p>
+              </figure>
+            </a>
           </div>
           <div class="grid-4-12">
-            <figure class="listing-item">
-              <img src="img/products/single.jpg" alt="">
-            <h4>MINIMAL SINGLE</h4>
-            <p>💳 10 💵 2</p>
-            </figure>
+            <a class="listing-item" href="#">
+              <figure>
+                <img src="img/products/topo_bag2.jpg" alt="a backpack">
+                <h4>Backpack 05</h4>
+                <p>$165</p>
+              </figure>
+            </a>
           </div>
           <div class="grid-4-12">
-            <figure class="listing-item">
-              <img src="img/products/trifold.jpg" alt="">
-            <h4>CAMO TRIFOLD</h4>
-            <p>💳 10 💵 2</p>
-            </figure>
+            <a class="listing-item" href="#">
+              <figure>
+                <img src="img/products/topo_bag3.jpg" alt="a backpack">
+                <h4>Backpack 06</h4>
+                <p>$165</p>
+              </figure>
+            </a>
           </div>
         </div>
       </div>
