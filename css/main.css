@@ -77,8 +77,8 @@ section .section-header, section nav, section article, footer {
 .header-link:hover {
   padding: 0.8rem 1.5rem;
   /*background: rgba(0,0,0,0.2);*/
-  border-bottom: solid 2px rgba(193,23,36,1);
-  color: rgba(193,23,36,1);
+  border-bottom: solid 2px rgba(121,189,154,1);
+  color: rgba(121,189,154,1);
 }
 
 /* Overview */
