@@ -77,8 +77,16 @@ section .section-header, section nav, section article, footer {
 .header-link:hover {
   padding: 0.8rem 1.5rem;
   /*background: rgba(0,0,0,0.2);*/
-  border-bottom: solid 2px rgba(193,23,36,1);
-  color: rgba(193,23,36,1);
+  border-bottom: solid 2px rgba(121,189,154,1);
+  color: rgba(121,189,154,1);
+}
+
+.header-link:focus {
+  padding: 0.8rem 1.5rem;
+  /*background: rgba(0,0,0,0.2);*/
+  font-weight: 700;
+  border-bottom: solid 2px rgba(121,189,154,1);
+  color: rgba(121,189,154,1);
 }
 
 /* Overview */
@@ -131,24 +139,40 @@ section .section-header {
   color: white;
 }
 
-.button.button-submit {
-  border: solid 0.15rem rgba(193,23,36,1);
-  background: rgba(193,23,36,1);
-}
+ /*Styling for Submit/Reset button*/
+  .button.button-submit{
+    display: inline-block;
+    padding: 0.5em;
+    color: #79BD9A;
+    border: 0.2em solid;
+    border-radius: 2em;
+    text-decoration: none;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;  
+  }
 
-.button.button-submit:hover {
-  background: rgba(255,255,255,1);
-  color: rgba(192,23,36,1);
-}
+  .button.button-submit:hover, .botton.button-submit:focus{
+    color: white;
+    border: 0.2em solid;
+    background-color: #79BD9A;
+  }
 
-.button.button-reset {
-  border: solid 0.15rem rgba(102,89,71,1);
-  background: rgba(102,89,71,1);  
-}
+  .button.button-reset{
+    display: inline-block;
+    padding: 0.5em;
+    color: #B7BDBA;
+    border: 0.2em solid;
+    border-radius: 2em;
+    text-decoration: none;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;  
+  }
 
-.button.button-reset:hover {
-  background: rgba(102,89,71,0.5);  
-}
+  .button.button-reset:hover, .button.button-reset:focus{
+    color: white;
+    border: 0.2em solid;
+    background-color: #787878;
+  }
 
 /* Combined Elements Styles */
 .listing-header {
