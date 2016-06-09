@@ -56,3 +56,31 @@
 	/*flex-shrink: 1;*/
 	flex-basis: 100%;
 }
+
+/* Header Nav Flex */
+.header {
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	
+	-webkit-align-items: stretch;
+	align-items: stretch;
+}
+
+.header-nav.nav-main {
+	/*flex-grow: 1;*/
+	/*flex-shrink: 1;*/
+	flex-basis: 100%;
+}
+
+.header-nav.nav-secondary {
+	/*flex-grow: 1;*/
+	/*flex-shrink: 1;*/
+	flex-basis: 40%;
+	text-align: right;
+}
