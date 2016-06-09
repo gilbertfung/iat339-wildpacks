@@ -149,6 +149,37 @@ section .section-header {
   background: rgba(102,89,71,0.5);  
 }
 
+/* Colors */
+.color {
+  color: white;
+  font-weight: bold;
+}
+
+.color > div {
+  display: inline-block;
+  padding: 1.5rem;
+}
+
+.light-gray {
+  background-color: #B7BDBA;
+}
+
+.dark-gray {
+  background-color: #787878;
+}
+
+.primary {
+  background-color: #79BD9A;
+}
+
+.secondary {
+  background-color: #3B8686;
+}
+
+.secondary-dark {
+  background-color: #0B486B;
+}
+
 /* Combined Elements Styles */
 .listing-header {
 
