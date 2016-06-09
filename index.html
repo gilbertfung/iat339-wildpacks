@@ -12,7 +12,7 @@
     <header class="header-logo">
       <a href="index.html"><img src="img/logo.png" alt="Wild Wallets"></a>
     </header>
-    <nav class="header-nav">
+    <nav class="header-nav nav-main">
       <ul>
         <li><a class="header-link active" href="index.html">Style Guide</a></li>
         <li><a class="header-link" href="user-flows.html">User Flows</a></li>
@@ -223,16 +223,22 @@
       <h3>Main Navigation</h3>
 
       <h4>Sample code:</h4>
-      <pre><code>
-&lt;section class="header"&gt;
+      <pre><code>&lt;section class="header"&gt;
   &lt;header class="header-logo"&gt;
     &lt;a href="index.html"&gt;&lt;img src="img/logo.png" alt="Wild Wallets"&gt;&lt;/a&gt;
   &lt;/header&gt;
-  &lt;nav class="header-nav"&gt;
+  &lt;nav class="header-nav nav-main"&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a class="header-link active" href="index.html"&gt;Browse&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a class="header-link" href="user-flows.html"&gt;Customize&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a class="header-link" href="citations.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class="header-link active" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class="header-link" href="#"&gt;Shop&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class="header-link" href="#"&gt;Events&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class="header-link" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;nav class="header-nav nav-secondary"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a class="header-link-icon" href="#"&gt;&lt;img src="img/icon-search.svg" alt="Search"&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class="header-link-icon" href="#"&gt;&lt;img src="img/icon-cart.svg" alt="Your Cart"&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/nav&gt;
 &lt;/section&gt;</code></pre>
@@ -242,11 +248,18 @@
         <header class="header-logo">
           <a href="index.html"><img src="img/logo.png" alt="Wild Wallets"></a>
         </header>
-        <nav class="header-nav">
+        <nav class="header-nav nav-main">
           <ul>
-            <li><a class="header-link active" href="index.html">Browse</a></li>
-            <li><a class="header-link" href="user-flows.html">Customize</a></li>
-            <li><a class="header-link" href="citations.html">About</a></li>
+            <li><a class="header-link active" href="#">Home</a></li>
+            <li><a class="header-link" href="#">Shop</a></li>
+            <li><a class="header-link" href="#">Events</a></li>
+            <li><a class="header-link" href="#">About</a></li>
+          </ul>
+        </nav>
+        <nav class="header-nav nav-secondary">
+          <ul>
+            <li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
+            <li><a class="header-link-icon" href="#"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
           </ul>
         </nav>
       </section>
