@@ -17,6 +17,7 @@
 
 .active {
   border-bottom: solid 0.1rem rgba(193,23,36,1);
+  font-weight: bold;
 }
 
 .fixed {
@@ -67,7 +68,7 @@ section .section-header, section nav, section article, footer {
   padding: 0.8rem 0.5rem;
   /*border-radius: 0.1rem;*/
   border-bottom: solid 2px transparent;
-  font-style: italic;
+  font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
   color: rgba(102,89,71,1);
@@ -218,13 +219,19 @@ section .section-header {
   display: inline-block;
 }
 
+.listing-item figure {
+  margin: 0;
+}
+
 .listing-item h4 {
   margin-bottom: 0;
   font-weight: bold;
+  text-align: center;
 }
 
 .listing-item p {
   margin-top: 0;
+  text-align: center;
 }
 
 /* Citations Styles */
