@@ -8,15 +8,46 @@
 </head>
 <body>
 
-	<nav class="header-nav nav-main"></nav>
-		<ul>
-			<li>
-				<a class="header-link active" href="#">ABOUT</a>
-			</li>
-		</ul>
+	<section class="header fixed">
+		<header class="header-logo">
+			<a href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+		</header>
+		<nav class="header-nav nav-main">
+			<ul>
+				<li><a class="header-link" href="#">Home</a></li>
+				<li><a class="header-link" href="#">Shop</a></li>
+				<li><a class="header-link" href="#">Events</a></li>
+				<li><a class="header-link active" href="#">About</a></li>
+			</ul>
+		</nav>
+		<nav class="header-nav nav-secondary">
+			<ul>
+				<li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
+				<li><a class="header-link-icon" href="#"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
+			</ul>
+		</nav>
+	</section>
 
-	<h1>This is a Heading</h1>
-	<p>This is a paragraph.</p>
+	<section class="grid grid-6-12">
+		<article class="section-header">
+			<h1>ABOUT US</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Maecenas non</a> sagittis lectus. Phasellus tincidunt, tellus hendrerit feugiat gravida, sapien nibh vulputate erat, a ornare est odio ultrices velit. Vivamus vitae tortor tortor. Donec accumsan est porttitor fermentum accumsan. Nunc sodales imperdiet dolor. Cras ac lectus massa. Aliquam dignissim dapibus nibh, vitae consequat ante rutrum id. Aliquam erat volutpat. Vivamus facilisis tortor convallis consequat efficitur. Proin purus felis, egestas sed molestie id, sagittis sit amet augue. Morbi sit amet placerat neque. Suspendisse enim turpis, gravida et ante non, tempor posuere mauris. Donec lacinia mauris ut sem faucibus feugiat.</p>
+		</article>
+	</section>
+
+	<section class="grid grid-6-12">
+	<article class="section-header">
+	<h2>CONTACT US</h2>
+		<form action="#" method="post">
+        <label for="contact-name">Name:</label>
+        <input type="text" id="contact-name" placeholder="Enter your name here">
+        <label for="contact-message">Message:</label>
+        <textarea type="text" id="contact-message" placeholder="Enter your message here"> </textarea>       
+		<input class="button button-submit" type="submit" value="Submit">
+		</form>
+	</article>
+	</section>
+
 
 </body>
 </html>
