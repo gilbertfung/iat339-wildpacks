@@ -24,7 +24,7 @@
   position: fixed;
 }
 
-section .section-header, section nav, section article, footer {
+section .section-header, section nav, section article {
   padding: 2rem 4rem;
 }
 
@@ -51,13 +51,13 @@ section .section-header, section nav, section article, footer {
   padding: 0;
 }
 
-.header-nav ul {
+nav ul {
   margin: 0;
   padding: 1rem 0 1rem 0;
   list-style: none;
 }
 
-.header-nav ul li {
+nav ul li {
   display: inline-block;
   vertical-align: middle;
 }
@@ -255,6 +255,20 @@ ul.citations li strong {
 cite {
   font-style: normal;
 }
+
+/* Footer */
+.footer-nav {
+  font-size: 0.8rem;
+}
+
+.footer-nav ul {
+  padding: 0.5rem 0;
+}
+
+.footer-nav ul li a {
+  padding: 0 1rem 0 0;
+}
+
 
 /*=============*/
 
