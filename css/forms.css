@@ -1,6 +1,14 @@
 /* Forms */
 
 form {
+	font-size: 0.8rem;
+}
+
+fieldset {
+	margin-bottom: 1rem;
+	border: 0;
+	border-top: solid 1px #ccc;
+	padding: 0.5rem 0 0.5rem;
 }
 
 label {
@@ -8,17 +16,66 @@ label {
 }
 
 input, input[type="text"], select {
-	border: solid 0.1rem rgba(102,89,71,1);
+	border: solid 0.1rem #ccc;
 	border-radius: 0.2rem;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 0.5rem;
 }
 
 select {
 	width: 100%;
+	margin: 0.5rem 0;
+	padding: 0.25rem 0.25rem 0.20rem 0.25rem;
 }
 
-input[type="number"] {
-	width: 50%;
+/* Color checkboxes */
+
+/* Use label as 'checkbox' */
+.filter-color + label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	margin: 0 1.5rem 1rem 0;
+}
+
+/* Hide normal checkboxes */
+.filter-color {
+	display: none;
+}
+
+/* Use label as 'checkbox' */
+.filter-color + label:before {
+	content: '';
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border: solid 0.1rem #ccc;
+	border-radius: 50%;
+	background-color: #333;
+}
+
+.filter-color + label:hover:before, .filter-color:checked + label:before {
+	border-width: 0.2rem;
+	border-color: #79BD9A;
+}
+
+label[for="filter-black"]:before  { background-color: black; }
+label[for="filter-gray"]:before   { background-color: gray; }
+label[for="filter-white"]:before  { background-color: white; }
+label[for="filter-beige"]:before  { background-color: beige; }
+label[for="filter-brown"]:before  { background-color: brown; }
+label[for="filter-mixed"]:before  { background: linear-gradient(to bottom, #79BD9A 0%, #3B8686 100%); }
+label[for="filter-red"]:before    { background-color: red; }
+label[for="filter-orange"]:before { background-color: orange; }
+label[for="filter-yellow"]:before { background-color: yellow; }
+label[for="filter-green"]:before  { background-color: green; }
+label[for="filter-blue"]:before   { background-color: blue; }
+label[for="filter-purple"]:before { background-color: purple; }
+
+#filter-black:before {
+	background-color: black;
 }
 
 input + label {

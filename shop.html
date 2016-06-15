@@ -35,33 +35,79 @@
     </header>
   </section>
 
-  <!-- INTERACTIVE ELEMENTS SECTION // -->
-  <section class="elements" id="interactive">
+  <section id="product-listing">
     <article class="grid">
       <div class="grid-md-3-12">
         <h3>Filter:</h3>
-        <form action="#" class="form-filter">
-          <input type="checkbox" name="filter-waterproof" id="filter-waterproof"><label for="filter-waterproof">Waterproof</label><br>
-          <input type="checkbox" name="filter-laptop" id="filter-laptop"><label for="filter-laptop">Supports laptop</label><br>
-          <input type="checkbox" name="filter-straps" id="filter-straps"><label for="filter-straps">Straps</label><br>
-          <input type="checkbox" name="filter-straps" id="filter-straps"><label for="filter-straps">Device pocket</label><br>
-          <select name="type" id="filter-type">
-            <option disabled selected>Select Type</option>
-            <option>here is a filter</option>
-            <option>here is a filter</option>
-            <option>here is a filter</option>
-          </select><br>
-          <select name="type" id="filter-type">
-            <option disabled selected>Select Type</option>
-            <option>here is a filter</option>
-            <option>here is a filter</option>
-            <option>here is a filter</option>
-          </select>
+        <form action="#" method="GET" class="form-filter">
+          <fieldset>
+            <legend>Categories</legend>
+            <select name="type" id="filter-occasion">
+              <option disabled selected>Select an occasion</option>
+              <option>here is a filter</option>
+              <option>here is a filter</option>
+              <option>here is a filter</option>
+            </select>
+            <select name="type" id="filter-type">
+              <option disabled selected>Select a backpack type</option>
+              <option>here is a filter</option>
+              <option>here is a filter</option>
+              <option>here is a filter</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Features</legend>
+            <input type="checkbox" name="filter-waterproof" id="filter-waterproof"><label for="filter-waterproof">Waterproof</label><br>
+            <input type="checkbox" name="filter-laptop" id="filter-laptop"><label for="filter-laptop">Supports laptop</label><br>
+            <input type="checkbox" name="filter-straps" id="filter-straps"><label for="filter-straps">Straps</label><br>
+            <input type="checkbox" name="filter-pockets" id="filter-pockets"><label for="filter-pockets">Device pockets</label><br>
+          </fieldset>
+          <fieldset>
+            <legend>Colors</legend>
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-black">
+            <label for="filter-black">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-gray">
+            <label for="filter-gray">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-white">
+            <label for="filter-white">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-beige">
+            <label for="filter-beige">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-brown">
+            <label for="filter-brown">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-mixed">
+            <label for="filter-mixed">&nbsp;</label>
+            
+            <br>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-red">
+            <label for="filter-red">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-orange">
+            <label for="filter-orange">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-yellow">
+            <label for="filter-yellow">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-green">
+            <label for="filter-green">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-blue">
+            <label for="filter-blue">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-purple">
+            <label for="filter-purple">&nbsp;</label>
+          </fieldset>
+          <input type="submit" id="filter-submit" value="Filter" class="button button-submit">
         </form>
       </div>
       <div class="grid-md-9-12 listings">
         <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-          <a class="listing-item" href="#">
+          <a class="listing-item" href="shop/bag-01.html">
             <figure>
               <img src="img/products/topo_bag1.jpg" alt="a backpack">
               <h4>Backpack 01</h4>
@@ -70,7 +116,7 @@
           </a>
         </div>
         <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-          <a class="listing-item" href="#">
+          <a class="listing-item" href="shop/bag-02.html">
             <figure>
               <img src="img/products/topo_bag2.jpg" alt="a backpack">
               <h4>Backpack 02</h4>
@@ -79,7 +125,7 @@
           </a>
         </div>
         <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-          <a class="listing-item" href="#">
+          <a class="listing-item" href="shop/bag-03.html">
             <figure>
               <img src="img/products/topo_bag3.jpg" alt="a backpack">
               <h4>Backpack 03</h4>
@@ -88,7 +134,7 @@
           </a>
         </div>
         <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-          <a class="listing-item" href="#">
+          <a class="listing-item" href="shop/bag-04.html">
             <figure>
               <img src="img/products/topo_bag1.jpg" alt="a backpack">
               <h4>Backpack 04</h4>
@@ -97,7 +143,7 @@
           </a>
         </div>
         <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-          <a class="listing-item" href="#">
+          <a class="listing-item" href="shop/bag-05.html">
             <figure>
               <img src="img/products/topo_bag2.jpg" alt="a backpack">
               <h4>Backpack 05</h4>
@@ -106,7 +152,7 @@
           </a>
         </div>
         <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-          <a class="listing-item" href="#">
+          <a class="listing-item" href="shop/bag-06.html">
             <figure>
               <img src="img/products/topo_bag3.jpg" alt="a backpack">
               <h4>Backpack 06</h4>
