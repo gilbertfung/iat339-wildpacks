@@ -25,7 +25,7 @@
 }
 
 section .section-header, section nav, section article {
-  padding: 2rem 4rem;
+  padding: 4rem 4rem;
 }
 
 /* Header */
@@ -49,6 +49,7 @@ section .section-header, section nav, section article {
 
 .header-nav {
   padding: 0;
+  display: inline-block;
 }
 
 nav ul {
@@ -233,6 +234,15 @@ section .section-header {
 .listing-item p {
   margin-top: 0;
   text-align: center;
+}
+
+.listing-item h3{         /*testing out event date*/
+  position: absolute;
+  right: 0;
+}
+
+.event-img {
+  padding-top: 2em;
 }
 
 /* Citations Styles */
