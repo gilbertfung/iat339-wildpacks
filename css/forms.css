@@ -27,6 +27,11 @@ select {
 	padding: 0.25rem 0.25rem 0.20rem 0.25rem;
 }
 
+input[type="search"] {
+	width: 100%;
+	box-sizing: border-box;
+}
+
 /* Color checkboxes */
 
 /* Use label as 'checkbox' */
