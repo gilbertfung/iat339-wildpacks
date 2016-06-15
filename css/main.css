@@ -24,7 +24,7 @@
   position: fixed;
 }
 
-section .section-header, section nav, section article {
+main, section .section-header, section nav, section article {
   padding: 2rem 4rem;
 }
 
@@ -219,7 +219,7 @@ section .section-header {
   padding: 1rem;
 }
 
-.listing-item {
+.listing-item, .thumbnail {
   display: inline-block;
 }
 
@@ -239,6 +239,19 @@ section .section-header {
 .listing-item p {
   margin-top: 0;
   text-align: center;
+}
+
+.thumbnail-row {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.thumbnail {
+  line-height: 0;
+}
+
+.thumbnail img {
+  width: 8rem;
 }
 
 /* Citations Styles */
