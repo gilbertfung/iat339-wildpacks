@@ -1,5 +1,9 @@
 /* Grid */
 
+.grid {
+	margin-right: -1rem;
+}
+
 .grid::after {
 	content: "";
 	display: block;
@@ -16,6 +20,7 @@
 	float: left;
 	width: 100%; /* Make all grid elements fit the whole width by default */
 	padding: 0;
+	padding-right: 1rem;
 }
 
 /* Mobile first grid */

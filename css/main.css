@@ -16,7 +16,7 @@
 }
 
 .active {
-  border-bottom: solid 0.1rem rgba(193,23,36,1);
+  border-bottom: solid 2px #79BD9A;
   font-weight: bold;
 }
 
@@ -37,7 +37,7 @@ main, section .section-header, section nav, section article {
 
 .header-logo {
   display: inline-block;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   margin-right: 1.5rem;
 }
 
@@ -65,28 +65,37 @@ nav ul li {
 .header-link {
   display: inline-block;
   height: 100%;
-  padding: 0.8rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   /*border-radius: 0.1rem;*/
   border-bottom: solid 2px transparent;
   font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
+  line-height: 0.9;
   color: rgba(102,89,71,1);
 }
 
-.header-link:hover, .header-link.active {
-  padding: 0.8rem 1.5rem;
-  /*background: rgba(0,0,0,0.2);*/
+.header-link:hover, .header-link:focus, .header-link.active {
+  padding: 0.5rem 1.5rem;
   border-bottom: solid 2px rgba(121,189,154,1);
   color: rgba(121,189,154,1);
 }
 
 .header-link:focus {
-  padding: 0.8rem 1.5rem;
-  /*background: rgba(0,0,0,0.2);*/
   font-weight: 700;
-  border-bottom: solid 2px rgba(121,189,154,1);
-  color: rgba(121,189,154,1);
+}
+
+.header-link-icon {
+
+}
+
+.header-link-icon.active {
+  background-color: #79BD9A;
+}
+
+.header-link-icon img {
+  width: 2rem;
+  height: 2rem;
 }
 
 /* Overview */
@@ -204,9 +213,6 @@ section .section-header {
 }
 
 /* Combined Elements Styles */
-.listings {
-  padding-left: 1rem;
-}
 
 .listing-header {
 
@@ -239,6 +245,14 @@ section .section-header {
   text-align: center;
 }
 
+#product-listing h1 {
+  margin-top: 0;
+}
+
+.product-image {
+  margin: 0;
+}
+
 .thumbnail-row {
   white-space: nowrap;
   overflow-x: scroll;
@@ -255,6 +269,8 @@ section .section-header {
 /* Table styles */
 table {
   width: 100%;
+  min-width: 32rem;
+  overflow-x: auto;
   text-align: left;
 }
 
@@ -282,6 +298,7 @@ th:last-child {
 
 td {
   padding: 1rem 0;
+  vertical-align: top;
 }
 
 td:last-child {
