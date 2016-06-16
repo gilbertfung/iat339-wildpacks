@@ -269,9 +269,12 @@ section .section-header {
 /* Table styles */
 table {
   width: 100%;
-  min-width: 32rem;
   overflow-x: auto;
   text-align: left;
+}
+
+.cart-listing {
+  min-width: 32rem;
 }
 
 thead {
