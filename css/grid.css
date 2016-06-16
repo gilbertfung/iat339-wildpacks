@@ -169,3 +169,18 @@
 	flex-basis: 40%;
 	text-align: right;
 }
+
+@media(max-width: 48rem) {
+	.header {
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+	}
+	.nav-main {
+		flex-grow: 2;
+		order: 2;
+		text-align: center;
+	}
+	.nav-main ul {
+		padding-top: 0;
+	}
+}

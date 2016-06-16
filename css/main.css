@@ -44,6 +44,12 @@ section article {
   padding: 0 4rem;
 }
 
+@media(max-width: 48rem) {
+  .header {
+    padding: 0 2rem;
+  }
+}
+
 .header-logo {
   display: inline-block;
   padding: 1rem 0;
@@ -51,9 +57,9 @@ section article {
 }
 
 .header-logo img {
+  display: inline-block;
   width: 6rem;
-  margin-top: -0.3rem;
-  vertical-align: middle;
+  line-height: 0;
 }
 
 .header-nav {
@@ -70,6 +76,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   vertical-align: middle;
+  line-height: 0;
 }
 
 .header-link {
@@ -91,12 +98,20 @@ nav ul li {
   color: rgba(121,189,154,1);
 }
 
+@media (max-width: 48rem) {
+  .header-link:hover, .header-link:focus, .header-link.active {
+    padding: 0.5rem;
+  }
+}
+
 .header-link:focus {
   font-weight: 700;
 }
 
 .header-link-icon {
-
+  display: inline-block;
+  line-height: 0;
+  border-bottom: none;
 }
 
 .header-link-icon.active {
