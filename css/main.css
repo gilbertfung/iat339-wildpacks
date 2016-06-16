@@ -114,6 +114,14 @@ section .section-header {
   padding-top: 4rem;
 }
 
+.home-section{
+  padding-top: 4rem;
+}
+
+.bestseller-grid {
+  padding-top: 2rem;
+}
+
 .overview-nav {
   /*display: inline-block;*/
   padding-top: 0;
