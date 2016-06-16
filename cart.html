@@ -35,16 +35,34 @@
     </header>
   </section>
 
-  <main class="grid" id="product-listing">
-    <article class="cart-item">
-      <a class="thumbnail" href="#"><img src="http://placehold.it/120x120" alt="a backpack"></a>
-      <h4>Backpack 05</h4>
-      $165
-    </article>
-    <div>
-      Subtotal: $165
-      <a class="button button-submit" href="cart-checkout.html">Proceed to checkout</a>      
-    </div>
+  <main>
+    <table class="cart-listing">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Product description</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a class="thumbnail" href="#"><img src="http://placehold.it/120x120" alt="a backpack"></a></td>
+          <td><h3>Backpack 05</h3></td>
+          <td>1</td>
+          <td>$165.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Subtotal</td>
+          <td></td>
+          <td></td>
+          <td>$165.00</td>
+        </tr>
+      </tfoot>
+    </table>
+    <a class="button button-submit" href="cart-checkout.html">Proceed to checkout</a>      
   </main>
   
   <section class="footer">
