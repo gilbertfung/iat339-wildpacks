@@ -1,7 +1,11 @@
 /* Forms */
 
 form {
-	font-size: 0.8rem;
+	
+}
+
+.form-checkout input {
+	width: 100%;
 }
 
 fieldset {
@@ -15,17 +19,20 @@ label {
 	display: inline-block;
 }
 
-input, input[type="text"], select {
+input, label, select {
+	font-size: 0.8rem;
+}
+
+/* Inputs with text in them */
+input[type="text"], input[type="search"], select {
 	border: solid 0.1rem #ccc;
 	border-radius: 0.2rem;
-	padding: 0.5rem 0.5rem;
-	width: 100%;
+	padding: 0.25rem 0.25rem 0.20rem 0.25rem;
 }
 
 select {
 	width: 100%;
 	margin: 0.5rem 0;
-	padding: 0.25rem 0.25rem 0.20rem 0.25rem;
 }
 
 input[type="search"] {

@@ -17,14 +17,14 @@
       <ul>
         <li><a class="header-link" href="index.html">Home</a></li>
         <li><a class="header-link" href="shop.html">Shop</a></li>
-        <li><a class="header-link" href="#">Events</a></li>
-        <li><a class="header-link" href="#">About</a></li>
+        <li><a class="header-link" href="events.html">Events</a></li>
+        <li><a class="header-link" href="about.html">About</a></li>
       </ul>
     </nav>
     <nav class="header-nav nav-secondary">
       <ul>
         <li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
-        <li><a class="header-link-icon active" href="#"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
+        <li><a class="header-link-icon active" href="cart.html"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
       </ul>
     </nav>
   </section>
@@ -35,68 +35,82 @@
     </header>
   </section>
 
-  <main class="grid" id="product-listing">
+  <main class="grid">
     <div class="grid-md-6-12">
-      <form action="#" method="POST" class="form-checkout">
+      <form action="cart-checkout.html" method="POST" class="form-checkout">
         <h2>Billing Address</h2>
-        <label for="checkout-name">Full Name</label><br>
-        <input type="text" name="checkout-name" id="checkout-name"><br>
-        <label for="checkout-card">Card number</label><br>
-        <input type="text" name="checkout-card" id="checkout-card"><br>
-        <label for="checkout-billing-address">Address</label><br>
-        <input type="text" name="checkout-billing-address" id="checkout-billing-address"><br>
-        <div class="grid-sm-7-12">
-          <label for="checkout-city">City</label><br>
-          <input type="text" name="checkout-city" id="checkout-city"><br>
-        </div>
-        <div class="grid-sm-5-12">
-          <label for="checkout-province">Province</label><br>
-          <input type="text" name="checkout-province" id="checkout-province"><br>
-        </div>
-        <div class="grid-sm-7-12">
-          <label for="checkout-country">Country</label><br>
-          <input type="text" name="checkout-country" id="checkout-country"><br>
-        </div>
-        <div class="grid-sm-5-12">
-          <label for="checkout-postal-code">Postal Code</label><br>
-          <input type="text" name="checkout-postal-code" id="checkout-postal-code"><br>
-        </div>
-        <div class="grid-sm-7-12">
-          <label for="checkout-expiry">Expiry</label><br>
-          <input type="text" name="checkout-expiry" id="checkout-expiry"><br>
-        </div>
-        <div class="grid-sm-5-12">
-          <label for="checkout-cvc">CVC</label><br>
-          <input type="text" name="checkout-cvc" id="checkout-cvc"><br>
+        <div class="grid">
+          <div class="grid-sm-12-12">
+            <label for="checkout-name">Full Name</label><br>
+            <input type="text" name="checkout-name" id="checkout-name">
+          </div>
+          <div class="grid-sm-12-12">
+            <label for="checkout-card">Card number</label><br>
+            <input type="text" name="checkout-card" id="checkout-card">
+          </div>
+          <div class="grid-sm-7-12">
+            <label for="checkout-expiry">Expiry</label><br>
+            <input type="text" name="checkout-expiry" id="checkout-expiry">
+          </div>
+          <div class="grid-sm-5-12">
+            <label for="checkout-cvc">CVC</label><br>
+            <input type="text" name="checkout-cvc" id="checkout-cvc">
+          </div>
+          <div class="grid-sm-12-12">
+            <label for="checkout-billing-address">Address</label><br>
+            <input type="text" name="checkout-billing-address" id="checkout-billing-address">
+          </div>
+          <div class="grid-sm-7-12">
+            <label for="checkout-city">City</label><br>
+            <input type="text" name="checkout-city" id="checkout-city">
+          </div>
+          <div class="grid-sm-5-12">
+            <label for="checkout-province">Province</label><br>
+            <input type="text" name="checkout-province" id="checkout-province">
+          </div>
+          <div class="grid-sm-7-12">
+            <label for="checkout-country">Country</label><br>
+            <input type="text" name="checkout-country" id="checkout-country">
+          </div>
+          <div class="grid-sm-5-12">
+            <label for="checkout-postal-code">Postal Code</label><br>
+            <input type="text" name="checkout-postal-code" id="checkout-postal-code">
+          </div>
         </div>
 
         <h2>Shipping Address</h2>
-        <label for="checkout-name">Full Name</label><br>
-        <input type="text" name="checkout-name" id="checkout-name"><br>
-        <label for="checkout-shipping-address">Address</label><br>
-        <input type="text" name="checkout-shipping-address" id="checkout-shipping-address"><br>
-        
-        <div class="grid-sm-7-12">
-          <label for="checkout-city">City</label><br>
-          <input type="text" name="checkout-city" id="checkout-city"><br>
+        <div class="grid">
+          <div class="grid-sm-12-12">
+            <label for="checkout-name">Full Name</label><br>
+            <input type="text" name="checkout-name" id="checkout-name">
+          </div>
+          <div class="grid-sm-12-12">
+            <label for="checkout-billing-address">Address</label><br>
+            <input type="text" name="checkout-billing-address" id="checkout-shipping-address">
+          </div>
+          <div class="grid-sm-7-12">
+            <label for="checkout-city">City</label><br>
+            <input type="text" name="checkout-city" id="checkout-city">
+          </div>
+          <div class="grid-sm-5-12">
+            <label for="checkout-province">Province</label><br>
+            <input type="text" name="checkout-province" id="checkout-province">
+          </div>
+          <div class="grid-sm-7-12">
+            <label for="checkout-country">Country</label><br>
+            <input type="text" name="checkout-country" id="checkout-country">
+          </div>
+          <div class="grid-sm-5-12">
+            <label for="checkout-postal-code">Postal Code</label><br>
+            <input type="text" name="checkout-postal-code" id="checkout-postal-code">
+          </div>
         </div>
-        <div class="grid-sm-5-12">
-          <label for="checkout-province">Province</label><br>
-          <input type="text" name="checkout-province" id="checkout-province"><br>
-        </div>
-        
-        <div class="grid-sm-7-12">
-          <label for="checkout-country">Country</label><br>
-          <input type="text" name="checkout-country" id="checkout-country"><br>
-        </div>
-        <div class="grid-sm-5-12">
-          <label for="checkout-postal-code">Postal Code</label><br>
-          <input type="text" name="checkout-postal-code" id="checkout-postal-code"><br>
-        </div>
+        <br>
+        <input type="submit" class="button button-submit" value="Pay now">
       </form>
-      <a class="button button-submit" href="cart-complete.html">Pay now</a>    
     </div>
-    <div class="grid-md-6-12">
+    <div class="grid-md-2-12">&nbsp;</div>
+    <div class="grid-md-4-12">
       <h2>Cart overview</h2>
       <table class="cart-overview">
         <thead>
@@ -115,9 +129,9 @@
         </tbody>
         <tfoot>
           <tr>
-            <td>Subtotal</td>
-            <td></td>
-            <td>$165.00</td>
+            <th>Subtotal</th>
+            <th></th>
+            <th>$165.00</th>
           </tr>
         </tfoot>
       </table>
