@@ -19,6 +19,7 @@ input, input[type="text"], select {
 	border: solid 0.1rem #ccc;
 	border-radius: 0.2rem;
 	padding: 0.5rem 0.5rem;
+	width: 100%;
 }
 
 select {

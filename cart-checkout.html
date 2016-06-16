@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Backpack | WildPacks</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <section class="header fixed">
+    <header class="header-logo">
+      <a href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+    </header>
+    <nav class="header-nav nav-main">
+      <ul>
+        <li><a class="header-link" href="index.html">Home</a></li>
+        <li><a class="header-link" href="shop.html">Shop</a></li>
+        <li><a class="header-link" href="#">Events</a></li>
+        <li><a class="header-link" href="#">About</a></li>
+      </ul>
+    </nav>
+    <nav class="header-nav nav-secondary">
+      <ul>
+        <li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
+        <li><a class="header-link-icon active" href="#"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="overview">
+    <header class="section-header">
+      <h1>Your Cart</h1>
+    </header>
+  </section>
+
+  <main class="grid" id="product-listing">
+    <div class="grid-md-6-12">
+      <form action="#" method="POST" class="form-checkout">
+        <h2>Billing Address</h2>
+        <label for="checkout-name">Full Name</label><br>
+        <input type="text" name="checkout-name" id="checkout-name"><br>
+        <label for="checkout-card">Card number</label><br>
+        <input type="text" name="checkout-card" id="checkout-card"><br>
+        <label for="checkout-billing-address">Address</label><br>
+        <input type="text" name="checkout-billing-address" id="checkout-billing-address"><br>
+        <div class="grid-sm-7-12">
+          <label for="checkout-city">City</label><br>
+          <input type="text" name="checkout-city" id="checkout-city"><br>
+        </div>
+        <div class="grid-sm-5-12">
+          <label for="checkout-province">Province</label><br>
+          <input type="text" name="checkout-province" id="checkout-province"><br>
+        </div>
+        <div class="grid-sm-7-12">
+          <label for="checkout-country">Country</label><br>
+          <input type="text" name="checkout-country" id="checkout-country"><br>
+        </div>
+        <div class="grid-sm-5-12">
+          <label for="checkout-postal-code">Postal Code</label><br>
+          <input type="text" name="checkout-postal-code" id="checkout-postal-code"><br>
+        </div>
+        <div class="grid-sm-7-12">
+          <label for="checkout-expiry">Expiry</label><br>
+          <input type="text" name="checkout-expiry" id="checkout-expiry"><br>
+        </div>
+        <div class="grid-sm-5-12">
+          <label for="checkout-cvc">CVC</label><br>
+          <input type="text" name="checkout-cvc" id="checkout-cvc"><br>
+        </div>
+
+        <h2>Shipping Address</h2>
+        <label for="checkout-name">Full Name</label><br>
+        <input type="text" name="checkout-name" id="checkout-name"><br>
+        <label for="checkout-shipping-address">Address</label><br>
+        <input type="text" name="checkout-shipping-address" id="checkout-shipping-address"><br>
+        
+        <div class="grid-sm-7-12">
+          <label for="checkout-city">City</label><br>
+          <input type="text" name="checkout-city" id="checkout-city"><br>
+        </div>
+        <div class="grid-sm-5-12">
+          <label for="checkout-province">Province</label><br>
+          <input type="text" name="checkout-province" id="checkout-province"><br>
+        </div>
+        
+        <div class="grid-sm-7-12">
+          <label for="checkout-country">Country</label><br>
+          <input type="text" name="checkout-country" id="checkout-country"><br>
+        </div>
+        <div class="grid-sm-5-12">
+          <label for="checkout-postal-code">Postal Code</label><br>
+          <input type="text" name="checkout-postal-code" id="checkout-postal-code"><br>
+        </div>
+      </form>
+      <a class="button button-submit" href="cart-complete.html">Pay now</a>    
+    </div>
+    <div class="grid-md-6-12">
+      <h2>Cart overview</h2>
+      <table class="cart-overview">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Backpack 05</td>
+            <td>1</td>
+            <td>$165.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Subtotal</td>
+            <td></td>
+            <td>$165.00</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </main>
+  
+  <section class="footer">
+    <nav class="footer-nav">
+      <footer>Made by Edward Chen and Gilbert Fung</footer>
+      <ul>
+        <li><a href="style-guide.html">Style Guide</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="citations.html">Citations</a></li>
+        <li><a href="https://github.com/gilbertfung/iat339-wildpacks">GitHub Repository</a></li>
+      </ul>
+    </nav>
+  </section>
+</body>
+</html>
