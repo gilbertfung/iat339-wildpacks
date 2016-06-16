@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products | WildPacks</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <section class="header fixed">
+    <header class="header-logo">
+      <a href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+    </header>
+    <nav class="header-nav nav-main">
+      <ul>
+        <li><a class="header-link" href="index.html">Home</a></li>
+        <li><a class="header-link active" href="shop.html">Shop</a></li>
+        <li><a class="header-link" href="#">Events</a></li>
+        <li><a class="header-link" href="#">About</a></li>
+      </ul>
+    </nav>
+    <nav class="header-nav nav-secondary">
+      <ul>
+        <li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
+        <li><a class="header-link-icon" href="#"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="overview">
+    <header class="section-header">
+      <h1>Shop</h1>
+    </header>
+  </section>
+
+  <section id="product-listing">
+    <article class="grid">
+      <div class="grid-md-3-12">
+        <form action="#" method="GET" class="form-filter">
+          <h3>Search:</h3>
+          <input type="search" id="filter-search" name="filter-search" value="Find a backpack">
+
+          <h3>Filter:</h3>
+          <fieldset>
+            <legend>Categories</legend>
+            <select name="type" id="filter-occasion">
+              <option disabled selected>Select an occasion</option>
+              <option>here is a filter</option>
+              <option>here is a filter</option>
+              <option>here is a filter</option>
+            </select>
+            <select name="type" id="filter-type">
+              <option disabled selected>Select a backpack type</option>
+              <option>here is a filter</option>
+              <option>here is a filter</option>
+              <option>here is a filter</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Features</legend>
+            <input type="checkbox" name="filter-waterproof" id="filter-waterproof"><label for="filter-waterproof">Waterproof</label><br>
+            <input type="checkbox" name="filter-laptop" id="filter-laptop"><label for="filter-laptop">Supports laptop</label><br>
+            <input type="checkbox" name="filter-straps" id="filter-straps"><label for="filter-straps">Straps</label><br>
+            <input type="checkbox" name="filter-pockets" id="filter-pockets"><label for="filter-pockets">Device pockets</label><br>
+          </fieldset>
+          <fieldset>
+            <legend>Colors</legend>
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-black">
+            <label for="filter-black">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-gray">
+            <label for="filter-gray">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-white">
+            <label for="filter-white">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-beige">
+            <label for="filter-beige">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-brown">
+            <label for="filter-brown">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-mixed">
+            <label for="filter-mixed">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-red">
+            <label for="filter-red">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-orange">
+            <label for="filter-orange">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-yellow">
+            <label for="filter-yellow">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-green">
+            <label for="filter-green">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-blue">
+            <label for="filter-blue">&nbsp;</label>
+
+            <input type="checkbox" name="filter-color[]" class="filter-color" id="filter-purple">
+            <label for="filter-purple">&nbsp;</label>
+          </fieldset>
+          <input type="submit" id="filter-submit" value="Filter" class="button button-submit">
+        </form>
+      </div>
+      <div class="grid-md-9-12 listings">
+        <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
+          <a class="listing-item" href="shop-backpack.html">
+            <figure>
+              <img src="http://placehold.it/250x250" alt="a backpack">
+              <h4>Backpack 01</h4>
+              <p>$165</p>
+            </figure>
+          </a>
+        </div>
+        <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
+          <a class="listing-item" href="shop-backpack.html">
+            <figure>
+              <img src="http://placehold.it/250x250" alt="a backpack">
+              <h4>Backpack 02</h4>
+              <p>$165</p>
+            </figure>
+          </a>
+        </div>
+        <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
+          <a class="listing-item" href="shop-backpack.html">
+            <figure>
+              <img src="http://placehold.it/250x250" alt="a backpack">
+              <h4>Backpack 03</h4>
+              <p>$165</p>
+            </figure>
+          </a>
+        </div>
+        <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
+          <a class="listing-item" href="shop-backpack.html">
+            <figure>
+              <img src="http://placehold.it/250x250" alt="a backpack">
+              <h4>Backpack 04</h4>
+              <p>$165</p>
+            </figure>
+          </a>
+        </div>
+        <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
+          <a class="listing-item" href="shop-backpack.html">
+            <figure>
+              <img src="http://placehold.it/250x250" alt="a backpack">
+              <h4>Backpack 05</h4>
+              <p>$165</p>
+            </figure>
+          </a>
+        </div>
+        <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
+          <a class="listing-item" href="shop-backpack.html">
+            <figure>
+              <img src="http://placehold.it/250x250" alt="a backpack">
+              <h4>Backpack 06</h4>
+              <p>$165</p>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+  
+  <section class="footer">
+    <nav class="footer-nav">
+      <footer>Made by Edward Chen and Gilbert Fung</footer>
+      <ul>
+        <li><a href="style-guide.html">Style Guide</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="citations.html">Citations</a></li>
+        <li><a href="https://github.com/gilbertfung/iat339-wildpacks">GitHub Repository</a></li>
+      </ul>
+    </nav>
+  </section>
+</body>
+</html>

@@ -24,7 +24,7 @@
   position: fixed;
 }
 
-section .section-header, section nav{
+main, section .section-header, section nav{
   padding: 4rem 4rem;
 }
 
@@ -229,6 +229,10 @@ section .section-header {
 }
 
 /* Combined Elements Styles */
+.listings {
+  padding-left: 1rem;
+}
+
 .listing-header {
 
 }
@@ -238,17 +242,21 @@ section .section-header {
   padding: 1rem;
 }
 
-.listing-item {
+.listing-item, .thumbnail {
   display: inline-block;
 }
 
 .listing-item figure {
   margin: 0;
+  margin-bottom: 2rem;
+  line-height: 1;
 }
 
 .listing-item h4 {
-  margin-bottom: 0;
+/*  margin-bottom: 0;
+  margin-top: 0.5rem;*/
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
   text-align: center;
 }
@@ -265,6 +273,19 @@ section .section-header {
 
 .event-img {
   padding-top: 2em;
+}
+
+.thumbnail-row {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.thumbnail {
+  line-height: 0;
+}
+
+.thumbnail img {
+  width: 8rem;
 }
 
 /* Citations Styles */
