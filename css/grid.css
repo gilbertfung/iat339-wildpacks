@@ -16,6 +16,7 @@
 	float: left;
 	width: 100%; /* Make all grid elements fit the whole width by default */
 	padding: 0;
+	padding-right: 1rem;
 }
 
 /* Mobile first grid */
@@ -81,6 +82,7 @@
 	.grid-md-12-12 { width: 100%; }
 }
 
+<<<<<<< e9ff9db58e090bf3228b45305395ab005a6645ac
 /* Large devices */
 @media(min-width: 64rem) {
 	.grid-lg-1-12  { width: calc( 1 / 12 * 100%); }
@@ -95,7 +97,7 @@
 	.grid-lg-10-12 { width: calc(10 / 12 * 100%); }
 	.grid-lg-11-12 { width: calc(11 / 12 * 100%); }
 	.grid-lg-12-12 { width: 100%; }
-}
+
 
 /* Extra large devices */
 @media(min-width: 90rem) {
