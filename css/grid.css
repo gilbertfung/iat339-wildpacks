@@ -1,5 +1,9 @@
 /* Grid */
 
+.grid {
+	margin-right: -1rem;
+}
+
 .grid::after {
 	content: "";
 	display: block;

@@ -16,7 +16,7 @@
 }
 
 .active {
-  border-bottom: solid 0.1rem rgba(193,23,36,1);
+  border-bottom: solid 2px #79BD9A;
   font-weight: bold;
 }
 
@@ -46,7 +46,7 @@ section article {
 
 .header-logo {
   display: inline-block;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   margin-right: 1.5rem;
 }
 
@@ -75,28 +75,37 @@ nav ul li {
 .header-link {
   display: inline-block;
   height: 100%;
-  padding: 0.8rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   /*border-radius: 0.1rem;*/
   border-bottom: solid 2px transparent;
   font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
+  line-height: 0.9;
   color: rgba(102,89,71,1);
 }
 
-.header-link:hover, .header-link.active {
-  padding: 0.8rem 1.5rem;
-  /*background: rgba(0,0,0,0.2);*/
+.header-link:hover, .header-link:focus, .header-link.active {
+  padding: 0.5rem 1.5rem;
   border-bottom: solid 2px rgba(121,189,154,1);
   color: rgba(121,189,154,1);
 }
 
 .header-link:focus {
-  padding: 0.8rem 1.5rem;
-  /*background: rgba(0,0,0,0.2);*/
   font-weight: 700;
-  border-bottom: solid 2px rgba(121,189,154,1);
-  color: rgba(121,189,154,1);
+}
+
+.header-link-icon {
+
+}
+
+.header-link-icon.active {
+  background-color: #79BD9A;
+}
+
+.header-link-icon img {
+  width: 2rem;
+  height: 2rem;
 }
 
 /* Overview */
@@ -152,8 +161,10 @@ section .section-header {
 
 /* Style Guide Styles */
 .button {
-  border-radius: 0.2rem;
-  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0.5rem 1rem 0.3rem 1rem;
+  background-color: transparent;
   color: white;
   margin-bottom: 0.5rem;
 }
@@ -164,36 +175,32 @@ section .section-header {
 
  /*Styling for Submit/Reset button*/
   .button.button-submit{
-    display: inline-block;
-    /*padding: 0.5em;*/
     color: #79BD9A;
-    border: 0.2em solid;
+    border: 0.2em solid #79BD9A;
     border-radius: 2em;
     text-decoration: none;
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;  
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;  
   }
 
   .button.button-submit:hover, .botton.button-submit:focus{
     color: white;
-    border: 0.2em solid;
+    border: 0.2em solid #79BD9A;
     background-color: #79BD9A;
   }
 
   .button.button-reset{
-    display: inline-block;
-    padding: 0.5em;
     color: #B7BDBA;
-    border: 0.2em solid;
+    border: 0.2em solid #79BD9A;
     border-radius: 2em;
     text-decoration: none;
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;  
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;  
   }
 
   .button.button-reset:hover, .button.button-reset:focus{
     color: white;
-    border: 0.2em solid;
+    border: 0.2em solid #787878;
     background-color: #787878;
   }
 
@@ -229,9 +236,6 @@ section .section-header {
 }
 
 /* Combined Elements Styles */
-.listings {
-  padding-left: 1rem;
-}
 
 .listing-header {
 
@@ -275,6 +279,14 @@ section .section-header {
   padding-top: 2em;
 }
 
+#product-listing h1 {
+  margin-top: 0;
+}
+
+.product-image {
+  margin: 0;
+}
+
 .thumbnail-row {
   white-space: nowrap;
   overflow-x: scroll;
@@ -286,6 +298,48 @@ section .section-header {
 
 .thumbnail img {
   width: 8rem;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  overflow-x: auto;
+  text-align: left;
+}
+
+.cart-listing {
+  min-width: 32rem;
+}
+
+thead {
+  border-bottom: solid 1px #ccc;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+tfoot {
+  border-top: solid 1px #ccc; 
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+th:last-child {
+  text-align: right;
+}
+
+td {
+  padding: 1rem 0;
+  vertical-align: top;
+}
+
+td:last-child {
+  text-align: right;
 }
 
 /* Citations Styles */
