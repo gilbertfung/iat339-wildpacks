@@ -10,32 +10,32 @@
 
 <body>
   <section class="header fixed">
-    <header class="header-logo">
-      <a href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+    <header class="container">
+      <a class="header-logo" href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+      <nav class="header-nav nav-main">
+        <ul>
+          <li><a class="header-link" href="index.html">Home</a></li>
+          <li><a class="header-link active" href="shop.html">Shop</a></li>
+          <li><a class="header-link" href="events.html">Events</a></li>
+          <li><a class="header-link" href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <nav class="header-nav nav-secondary">
+        <ul>
+          <li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
+          <li><a class="header-link-icon" href="cart.html"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
+        </ul>
+      </nav>
     </header>
-    <nav class="header-nav nav-main">
-      <ul>
-        <li><a class="header-link" href="index.html">Home</a></li>
-        <li><a class="header-link active" href="shop.html">Shop</a></li>
-        <li><a class="header-link" href="events.html">Events</a></li>
-        <li><a class="header-link" href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <nav class="header-nav nav-secondary">
-      <ul>
-        <li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
-        <li><a class="header-link-icon" href="cart.html"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
-      </ul>
-    </nav>
   </section>
 
-  <section class="overview">
-    <header class="section-header">
+  <section class="overview top">
+    <header class="container">
       <h1>Shop</h1>
     </header>
   </section>
 
-  <section id="product-listing">
+  <main id="product-listing" class="container">
     <article class="grid">
       <div class="grid-md-3-12">
         <form action="#" method="GET" class="form-filter">
@@ -165,7 +165,7 @@
         </div>
       </div>
     </article>
-  </section>
+  </main>
   
   <section class="footer">
     <nav class="footer-nav">

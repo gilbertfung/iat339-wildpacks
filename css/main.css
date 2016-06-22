@@ -24,13 +24,9 @@
   position: fixed;
 }
 
-main, section .section-header, section nav{
-  padding: 4rem 4rem;
-}
-
-section article {
-  padding-left: 4rem;
-  padding-right: 4rem;
+/* Top padding to compensate for the fixed header */
+.top {
+  padding-top: 4rem;
 }
 
 .event-sidebar {
@@ -40,14 +36,26 @@ section article {
 /* Header */
 .header {
   width: 100%;
-  background: rgba(255,255,255,0.8);
-  padding: 0 4rem;
+  background: rgba(255,255,255,1);
+  /*padding: 0 4rem;*/
+  box-shadow: 0 0 0.5rem #666;
 }
 
-@media(max-width: 48rem) {
-  .header {
-    padding: 0 2rem;
+@media(max-width: 38rem) {
+  .nav-main {
+    flex-grow: 2;
+    order: 2;
+    text-align: center;
   }
+  .nav-main ul {
+    padding-top: 0;
+  }
+}
+
+.header header {
+  -webkit-display: flex;
+  display: flex;
+  width: 100%;
 }
 
 .header-logo {
@@ -128,10 +136,6 @@ nav ul li {
   padding-top: 5rem;
   background: rgba(0,0,0,0.8);
   color: white;
-}
-
-section .section-header {
-  padding-bottom: 0;
 }
 
 .event-header {
