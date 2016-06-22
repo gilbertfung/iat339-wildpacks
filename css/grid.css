@@ -1,5 +1,33 @@
 /* Grid */
 
+/* Container to keep it from being too wide */
+.container {
+	max-width: 72rem;
+	margin: 0 auto;
+}
+
+@media (max-width: 78rem) {
+	.container {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}
+
+@media (max-width: 64rem) {
+	.container {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+@media (max-width: 30rem) {
+	.container {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+/* Negative margin to 'remove' the padding for columns on the right edge */
 .grid {
 	margin-right: -1rem;
 }
