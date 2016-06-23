@@ -33,6 +33,10 @@
   padding-top: 6.5rem;
 }
 
+.event-details-grid{
+  padding-left: 3em;
+}
+
 /* Header */
 .header {
   width: 100%;
@@ -143,12 +147,12 @@ nav ul li {
 }
 
 .home-section{
-  padding-top: 4rem;
+  padding-top: 1rem;
 }
 
-.bestseller-grid {
+/*.bestseller-grid {
   padding-top: 2rem;
-}
+}*/
 
 .overview-nav {
   /*display: inline-block;*/
