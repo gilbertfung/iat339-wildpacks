@@ -320,20 +320,24 @@ nav ul li {
 }
 
 /* Table styles */
-table {
-  width: 100%;
-  overflow-x: auto;
-  text-align: left;
+.cart-listing {
+  overflow-x: scroll;
+  min-width: 32rem;
 }
 
-.cart-listing {
-  min-width: 32rem;
+table {
+  width: 100%;
+  text-align: left;
 }
 
 thead {
   border-bottom: solid 1px #ccc;
   font-size: 0.8rem;
   text-transform: uppercase;
+}
+
+tbody h3 {
+  margin: 0;
 }
 
 tfoot {
