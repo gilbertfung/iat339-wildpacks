@@ -3,53 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WildPacks - Backpack</title>
+  <title>WildPacks - Knapsack</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
   <section class="header fixed">
-    <header class="header-logo">
-      <a href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
-    </header>
-    <nav class="header-nav nav-main">
-      <ul>
-        <li><a class="header-link" href="index.html">Home</a></li>
-        <li><a class="header-link active" href="shop.html">Shop</a></li>
-        <li><a class="header-link" href="events.html">Events</a></li>
-        <li><a class="header-link" href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <nav class="header-nav nav-secondary">
-      <ul>
-        <li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
-        <li><a class="header-link-icon" href="cart.html"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
-      </ul>
-    </nav>
-  </section>
-
-  <section class="overview">
-    <header class="section-header">
-      <h1>Shop</h1>
+    <header class="container">
+      <a class="header-logo" href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+      <nav class="header-nav nav-main">
+        <ul>
+          <li><a class="header-link" href="index.html">Home</a></li>
+          <li><a class="header-link active" href="shop.html">Shop</a></li>
+          <li><a class="header-link" href="events.html">Events</a></li>
+          <li><a class="header-link" href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <nav class="header-nav nav-secondary">
+        <ul>
+          <li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
+          <li><a class="header-link-icon" href="cart.html"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
+        </ul>
+      </nav>
     </header>
   </section>
 
-  <main class="grid" id="product-listing">
+  <main class="container top">
+  <div class="grid">
     <div class="grid-md-5-12">
       <figure class="product-image">
-        <img src="http://placehold.it/500x500" alt="a backpack">
+        <img src="img/products/topo_bag2.jpg" alt="a backpack">
         <div class="thumbnail-row">
-          <a class="thumbnail" href="#"><img src="http://placehold.it/120x120" alt="a backpack"></a>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/120x120" alt="a backpack"></a>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/120x120" alt="a backpack"></a>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/120x120" alt="a backpack"></a>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/120x120" alt="a backpack"></a>
+          <a class="thumbnail" href="#"><img src="img/products/topo_bag2.jpg" alt="a backpack"></a>
+          <a class="thumbnail" href="#"><img src="img/products/topo_bag2_a.jpg" alt="a backpack"></a>
+          <a class="thumbnail" href="#"><img src="img/products/topo_bag2_b.jpg" alt="a backpack"></a>
+          <a class="thumbnail" href="#"><img src="img/products/topo_bag2_c.jpg" alt="a backpack"></a>
+          <a class="thumbnail" href="#"><img src="img/products/topo_bag2_d.jpg" alt="a backpack"></a>
         </div>
       </figure>
     </div>
     <div class="grid-md-7-12">
-      <h1>Backpack 05<br>$165</h1>
+      <h1>Knapsack<br>$165</h1>
       <p>Longer product description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel pulvinar neque, at aliquet libero. Suspendisse ac dignissim sem. Aliquam erat volutpat. Maecenas molestie orci risus, eget tempor justo luctus eget. Etiam pellentesque sollicitudin urna vel ullamcorper. Nunc nec finibus quam. Integer semper, nunc vel rhoncus ultricies, justo quam egestas risus, non consectetur nisi felis sit amet nisl. Quisque pellentesque dolor velit, ac tincidunt diam lacinia non.</p>
       
       <fieldset>
@@ -73,6 +68,7 @@
       <a class="button button-submit" href="cart.html">Add to cart</a>
       <a class="button button-submit" href="#">Request a trial</a>
     </div>
+  </div>
   </main>
   
   <footer class="footer">
