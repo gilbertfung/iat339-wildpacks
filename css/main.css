@@ -62,6 +62,7 @@
   display: inline-block;
   padding: 1rem 0;
   margin-right: 1.5rem;
+  line-height: 0;
 }
 
 .header-logo img {
@@ -428,13 +429,5 @@ cite {
 }
 
 img {
-  max-width: 100%;
-}
-
-img[src^="img/wallet"] {
-  max-width: 45%; 
-}
-
-img[src^="img/user-flow-2/4k"] {
-  max-width: 45%; 
+  width: 100%;
 }
