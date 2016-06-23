@@ -38,24 +38,27 @@
   <main id="product-listing" class="container">
     <article class="grid">
       <div class="grid-md-3-12">
+        <input type="checkbox" name="toggle" id="filter-toggle" />
+        <label for="filter-toggle" class="button button-submit">Toggle Filter</label>
+
         <form action="#" method="GET" class="form-filter">
           <h3>Search:</h3>
-          <input type="search" id="filter-search" name="filter-search" value="Find a backpack">
+          <input type="search" id="filter-search" name="filter-search" placeholder="Find a backpack">
 
           <h3>Filter:</h3>
           <fieldset>
             <legend>Categories</legend>
             <select name="type" id="filter-occasion">
               <option disabled selected>Select an occasion</option>
-              <option>here is a filter</option>
-              <option>here is a filter</option>
-              <option>here is a filter</option>
+              <option>Everyday use</option>
+              <option>Travelling</option>
+              <option>Outdoor adventure</option>
             </select>
             <select name="type" id="filter-type">
               <option disabled selected>Select a backpack type</option>
-              <option>here is a filter</option>
-              <option>here is a filter</option>
-              <option>here is a filter</option>
+              <option>Backpack</option>
+              <option>Messenger bag</option>
+              <option>Duffel bag</option>
             </select>
           </fieldset>
           <fieldset>
@@ -109,56 +112,56 @@
       <div class="grid-md-9-12 listings">
         <div class="grid">
           <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-            <a class="listing-item" href="shop-backpack.html">
+            <a class="listing-item" href="shop-backpack-rugged.html">
               <figure>
-                <img src="http://placehold.it/250x250" alt="a backpack">
-                <h4>Backpack 01</h4>
-                <p>$165</p>
+                <img src="img/products/topo_bag1.jpg" alt="a backpack">
+                <h4>Rugged Pack</h4>
+                <p>$139</p>
               </figure>
             </a>
           </div>
           <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-            <a class="listing-item" href="shop-backpack.html">
+            <a class="listing-item" href="shop-backpack-everyday.html">
               <figure>
-                <img src="http://placehold.it/250x250" alt="a backpack">
-                <h4>Backpack 02</h4>
-                <p>$165</p>
+                <img src="img/products/topo_bag2.jpg" alt="a backpack">
+                <h4>Everyday Pack</h4>
+                <p>$149</p>
               </figure>
             </a>
           </div>
           <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-            <a class="listing-item" href="shop-backpack.html">
+            <a class="listing-item" href="shop-backpack-knapsack.html">
               <figure>
-                <img src="http://placehold.it/250x250" alt="a backpack">
-                <h4>Backpack 03</h4>
-                <p>$165</p>
+                <img src="img/products/topo_bag3.jpg" alt="a backpack">
+                <h4>Knapsack</h4>
+                <p>$169</p>
               </figure>
             </a>
           </div>
           <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-            <a class="listing-item" href="shop-backpack.html">
+            <a class="listing-item" href="shop-backpack-rugged.html">
               <figure>
-                <img src="http://placehold.it/250x250" alt="a backpack">
-                <h4>Backpack 04</h4>
-                <p>$165</p>
+                <img src="img/products/topo_bag4.jpg" alt="a backpack">
+                <h4>Hiking Pack</h4>
+                <p>$189</p>
               </figure>
             </a>
           </div>
           <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-            <a class="listing-item" href="shop-backpack.html">
+            <a class="listing-item" href="shop-backpack-everyday.html">
               <figure>
-                <img src="http://placehold.it/250x250" alt="a backpack">
-                <h4>Backpack 05</h4>
-                <p>$165</p>
+                <img src="img/products/topo_bag5.jpg" alt="a backpack">
+                <h4>Duffel Bag</h4>
+                <p>$129</p>
               </figure>
             </a>
           </div>
           <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-            <a class="listing-item" href="shop-backpack.html">
+            <a class="listing-item" href="shop-backpack-knapsack.html">
               <figure>
-                <img src="http://placehold.it/250x250" alt="a backpack">
-                <h4>Backpack 06</h4>
-                <p>$165</p>
+                <img src="img/products/topo_bag6.jpg" alt="a backpack">
+                <h4>Strap Pack</h4>
+                <p>$98</p>
               </figure>
             </a>
           </div>
@@ -167,16 +170,16 @@
     </article>
   </main>
   
-  <section class="footer">
-    <nav class="footer-nav">
-      <footer>Made by Edward Chen and Gilbert Fung</footer>
+  <footer class="footer">
+    <nav class="footer-nav container">
       <ul>
+        <li>Made by Edward Chen and Gilbert Fung</li>
         <li><a href="style-guide.html">Style Guide</a></li>
         <li><a href="sitemap.html">Sitemap</a></li>
         <li><a href="citations.html">Citations</a></li>
         <li><a href="https://github.com/gilbertfung/iat339-wildpacks">GitHub Repository</a></li>
       </ul>
     </nav>
-  </section>
+  </footer>
 </body>
 </html>

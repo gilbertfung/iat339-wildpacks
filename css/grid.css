@@ -67,7 +67,7 @@
 .grid-12-12 { width: 100%; }
 
 /* Extra small devices */
-@media(max-width: 30rem) { 
+@media(max-width: 24rem) { 
 	.grid-xs-1-12  { width: calc( 1 / 12 * 100%); }
 	.grid-xs-2-12  { width: calc( 2 / 12 * 100%); }
 	.grid-xs-3-12  { width: calc( 3 / 12 * 100%); }

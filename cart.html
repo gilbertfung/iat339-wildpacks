@@ -3,16 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Backpack | WildPacks</title>
+  <title>WildPacks - Your Cart</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
   <section class="header fixed">
-    <header class="header-logo">
-      <a href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
-    </header>
+    <header class="container">
+      <a class="header-logo" href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
     <nav class="header-nav nav-main">
       <ul>
         <li><a class="header-link" href="index.html">Home</a></li>
@@ -27,19 +26,16 @@
         <li><a class="header-link-icon active" href="cart.html"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
       </ul>
     </nav>
-  </section>
-
-  <section class="overview">
-    <header class="section-header">
-      <h1>Your Cart</h1>
     </header>
   </section>
 
-  <main>
-    <table class="cart-listing">
+  <main class="container top">
+    <h1>Your Cart</h1>
+    <div class="cart-listing">
+    <table>
       <thead>
         <tr>
-          <th></th>
+          <th>Image</th>
           <th>Product description</th>
           <th>Quantity</th>
           <th>Price</th>
@@ -47,8 +43,8 @@
       </thead>
       <tbody>
         <tr>
-          <td><a class="thumbnail" href="#"><img src="http://placehold.it/120x120" alt="a backpack"></a></td>
-          <td><h3>Backpack 05</h3></td>
+          <td><a class="thumbnail" href="#"><img src="img/products/topo_bag1.jpg" alt="a backpack"></a></td>
+          <td><h3>Rugged Pack</h3></td>
           <td>1</td>
           <td>$165.00</td>
         </tr>
@@ -62,19 +58,22 @@
         </tr>
       </tfoot>
     </table>
-    <a class="button button-submit" href="cart-checkout.html">Proceed to checkout</a>      
+    </div>
+    <p>
+      <a class="button button-submit" href="cart-checkout.html">Proceed to checkout</a>
+    </p>
   </main>
   
-  <section class="footer">
-    <nav class="footer-nav">
-      <footer>Made by Edward Chen and Gilbert Fung</footer>
+  <footer class="footer">
+    <nav class="footer-nav container">
       <ul>
+        <li>Made by Edward Chen and Gilbert Fung</li>
         <li><a href="style-guide.html">Style Guide</a></li>
         <li><a href="sitemap.html">Sitemap</a></li>
         <li><a href="citations.html">Citations</a></li>
         <li><a href="https://github.com/gilbertfung/iat339-wildpacks">GitHub Repository</a></li>
       </ul>
     </nav>
-  </section>
+  </footer>
 </body>
 </html>

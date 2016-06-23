@@ -26,7 +26,7 @@
 
 /* Top padding to compensate for the fixed header */
 .top {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .event-sidebar {
@@ -66,6 +66,7 @@
   display: inline-block;
   padding: 1rem 0;
   margin-right: 1.5rem;
+  line-height: 0;
 }
 
 .header-logo img {
@@ -137,7 +138,6 @@ nav ul li {
 
 /* Overview */
 .overview {
-  padding-top: 5rem;
   background: rgba(0,0,0,0.8);
   color: white;
 }
@@ -340,20 +340,24 @@ nav ul li {
 }
 
 /* Table styles */
-table {
-  width: 100%;
-  overflow-x: auto;
-  text-align: left;
+.cart-listing {
+  overflow-x: scroll;
+  min-width: 32rem;
 }
 
-.cart-listing {
-  min-width: 32rem;
+table {
+  width: 100%;
+  text-align: left;
 }
 
 thead {
   border-bottom: solid 1px #ccc;
   font-size: 0.8rem;
   text-transform: uppercase;
+}
+
+tbody h3 {
+  margin: 0;
 }
 
 tfoot {
@@ -405,6 +409,7 @@ cite {
 
 /* Footer */
 .footer-nav {
+  margin-top: 4rem;
   font-size: 0.8rem;
 }
 
@@ -412,8 +417,8 @@ cite {
   padding: 0.5rem 0;
 }
 
-.footer-nav ul li a {
-  padding: 0 1rem 0 0;
+.footer-nav ul li {
+  padding: 0 2rem 0 0;
 }
 
 
@@ -448,13 +453,5 @@ cite {
 }
 
 img {
-  max-width: 100%;
-}
-
-img[src^="img/wallet"] {
-  max-width: 45%; 
-}
-
-img[src^="img/user-flow-2/4k"] {
-  max-width: 45%; 
+  width: 100%;
 }

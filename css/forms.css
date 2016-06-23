@@ -4,7 +4,7 @@ form {
 	
 }
 
-.form-checkout input {
+.form-checkout input, input.block {
 	width: 100%;
 }
 
@@ -95,4 +95,31 @@ input + label {
 	display: inline-block;
 	line-height: 2;
 	padding-left: 0.5rem;
+}
+
+
+#filter-toggle {
+	display: none;
+}
+
+label[for="filter-toggle"] {
+	cursor: pointer;
+}
+
+#filter-toggle:not(checked) ~ .form-filter {
+	display: none;
+}
+
+#filter-toggle:checked ~ .form-filter {
+	display: block;
+}
+
+@media (min-width: 48rem) {
+	label[for="filter-toggle"] {
+		display: none;
+	}
+
+	#filter-toggle:not(checked) ~ .form-filter {
+		display: initial;
+	}
 }
