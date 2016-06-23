@@ -38,6 +38,9 @@
   <main id="product-listing" class="container">
     <article class="grid">
       <div class="grid-md-3-12">
+        <input type="checkbox" name="toggle" id="filter-toggle" />
+        <label for="filter-toggle" class="button button-submit">Toggle Filter</label>
+
         <form action="#" method="GET" class="form-filter">
           <h3>Search:</h3>
           <input type="search" id="filter-search" name="filter-search" placeholder="Find a backpack">
@@ -47,15 +50,15 @@
             <legend>Categories</legend>
             <select name="type" id="filter-occasion">
               <option disabled selected>Select an occasion</option>
-              <option>here is a filter</option>
-              <option>here is a filter</option>
-              <option>here is a filter</option>
+              <option>Everyday use</option>
+              <option>Travelling</option>
+              <option>Outdoor adventure</option>
             </select>
             <select name="type" id="filter-type">
               <option disabled selected>Select a backpack type</option>
-              <option>here is a filter</option>
-              <option>here is a filter</option>
-              <option>here is a filter</option>
+              <option>Backpack</option>
+              <option>Messenger bag</option>
+              <option>Duffel bag</option>
             </select>
           </fieldset>
           <fieldset>
