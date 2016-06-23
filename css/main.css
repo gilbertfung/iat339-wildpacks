@@ -210,6 +210,13 @@ nav ul li {
     color: white;
     border: 0.2em solid #79BD9A;
     background-color: #79BD9A;
+    transform: scale(1.05);    /* hover over container to make img scale to prevent glitches */
+  }
+
+  .button.button-submit.rsvp:focus {
+    color: white;
+    border: 0.2em solid #79BD9A;
+    background-color: #79BD9A;
   }
 
   .button.button-reset{
@@ -225,6 +232,11 @@ nav ul li {
     color: white;
     border: 0.2em solid #787878;
     background-color: #787878;
+  }
+
+  .button.rsvp {
+    width: 100%;
+    text-align: center;
   }
 
 /* Colors */
