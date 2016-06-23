@@ -28,6 +28,7 @@ h2, h3 {
 	font-style: normal;
 	text-transform: uppercase;
 	letter-spacing: 0.05rem;
+	padding-top: 0.5em;
 }
 
 h2 {
