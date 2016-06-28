@@ -27,6 +27,7 @@
 .hidden {
   opacity: 0;
   visibility: hidden;
+  display: none;
 }
 
 .shown {
@@ -268,7 +269,7 @@ input.search-bar {
 
   .button.button-reset{
     color: #B7BDBA;
-    border: 0.2em solid #79BD9A;
+    border: 0.2em solid #B7BDBA;
     border-radius: 2em;
     text-decoration: none;
     -webkit-transition: all 0.5s ease-out;
@@ -383,6 +384,31 @@ input.search-bar {
 }
 
 /* Table styles */
+.request-trial {
+  margin: 1rem 0;
+  border: solid 0.1rem #ccc;
+  border-radius: 1rem;
+  padding: 0 1rem 1rem;
+}
+
+.event-listing {
+}
+
+.event-listing td {
+  padding: 0.5rem 0;
+}
+
+.event-listing tbody tr {
+  cursor: pointer;
+}
+
+.event-listing tbody tr.active {
+  background: #79BD9A;
+  font-weight: normal;
+  color: white;
+  border: none;
+}
+
 .cart-listing {
   overflow-x: scroll;
   min-width: 32rem;

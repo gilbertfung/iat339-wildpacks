@@ -33,5 +33,26 @@ $(document).ready(function(){
 		$cartBadge.addClass('shown');
 	});
 
+	// Request a trial interaction
+	$('.js-request-trial').click(function(event){
+		event.preventDefault();
+		$requestTrial = $('.request-trial');
+		$requestTrial.removeClass('hidden');
+		$requestTrial.addClass('shown');
+	});
+
+	$('.request-trial tbody tr').click(function(event){
+		$(this).toggleClass('active');
+	});
+
+	$('.request-trial .button-submit, .request-trial .button-reset').click(function(event){
+		event.preventDefault();
+		$requestTrial = $('.request-trial');
+		$requestTrial.removeClass('shown');
+		$requestTrial.addClass('hidden');
+
+		if ($(this).hasClass('button-submit')) {
+			$requestTrial.after('<p>Request submitted!<p/>')
+		}
 	});
 });
