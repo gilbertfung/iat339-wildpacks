@@ -48,7 +48,7 @@
 	float: left;
 	width: 100%; /* Make all grid elements fit the whole width by default */
 	padding: 0;
-	padding-right: 1rem;
+	padding-right: 1.5rem;
 }
 
 /* Mobile first grid */
