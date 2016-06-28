@@ -8,7 +8,10 @@ $(document).ready(function(){
 	$('.js-add-to-cart').click(function(event){
 		event.preventDefault();
 		$(this).text('Added to cart!');
-		$('.header-nav .icon-cart .badge').removeClass('hidden');
-		$('.header-nav .icon-cart .badge').addClass('shown');
+		$cartBadge = $('.header-nav .icon-cart .badge');
+		$cartBadge.removeClass('hidden');
+		$cartBadge.addClass('shown');
+	});
+
 	});
 });

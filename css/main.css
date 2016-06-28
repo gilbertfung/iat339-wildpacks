@@ -24,6 +24,16 @@
   position: fixed;
 }
 
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.shown {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Top padding to compensate for the fixed header */
 .top {
   padding-top: 6rem;
@@ -125,15 +135,46 @@ nav ul li {
   display: inline-block;
   line-height: 0;
   border-bottom: none;
+  width: 2rem;
+  height: 2rem;
 }
 
 .header-link-icon.active {
   background-color: #79BD9A;
 }
 
-.header-link-icon img {
-  width: 2rem;
-  height: 2rem;
+.icon-search {
+  background-image: url('../img/icon-search.svg');
+}
+
+.icon-search:hover, .icon-search:focus, .icon-search.active {
+  background-image: url('../img/icon-search-hover.svg');
+}
+
+.icon-cart {
+  position: relative;
+  background-image: url('../img/icon-cart.svg');
+}
+
+.icon-cart:hover, .icon-cart:focus, .icon-cart.active {
+  background-image: url('../img/icon-cart-hover.svg');
+}
+
+.icon-cart .badge {
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #79BD9A;
+  transition: all 0.5s ease;
+}
+
+.icon-cart .badge.hidden {
+  width: 4.6rem;
+  height: 4.6rem;
 }
 
 /* Overview */
