@@ -139,10 +139,6 @@ nav ul li {
   height: 2rem;
 }
 
-.header-link-icon.active {
-  background-color: #79BD9A;
-}
-
 .icon-search {
   background-image: url('../img/icon-search.svg');
 }
@@ -175,6 +171,12 @@ nav ul li {
 .icon-cart .badge.hidden {
   width: 4.6rem;
   height: 4.6rem;
+}
+
+input.search-bar {
+  border: 0;
+  border-radius: 0;
+  border-bottom: solid 0.15rem #79BD9A;
 }
 
 /* Overview */
