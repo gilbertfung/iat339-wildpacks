@@ -22,8 +22,8 @@
       </nav>
       <nav class="header-nav nav-secondary">
         <ul>
-          <li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
-          <li><a class="header-link-icon" href="cart.html"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
+          <li><input class="search-bar" type="search" placeholder="Find a product or event"></li>
+          <li><a class="header-link-icon icon-cart" href="cart.html"><span class="badge hidden"></span></a></li>
         </ul>
       </nav>
     </header>
@@ -66,8 +66,44 @@
         <label for="filter-brown">&nbsp;</label>
       </fieldset>
 
-      <a class="button button-submit" href="cart.html">Add to cart</a>
-      <a class="button button-submit" href="#">Request a trial</a>
+      <a class="button button-submit js-add-to-cart" href="#">Add to cart</a>
+      <a class="button button-submit js-request-trial" href="#">Request a trial</a>
+
+      <div class="request-trial hidden">
+        <h3>Select an event</h3>
+        <table class="event-listing">
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Location</th>
+              <th>Date</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hiking</td>
+              <td>Lynn Canyon</td>
+              <td>June 23rd</td>
+              <td>Lots</td>
+            </tr>
+            <tr>
+              <td>Rock Climbing</td>
+              <td>Squamish Chief</td>
+              <td>June 25th</td>
+              <td>Some</td>
+            </tr>
+            <tr>
+              <td>The Grind</td>
+              <td>Grouse Mountain</td>
+              <td>June 29th</td>
+              <td>Few</td>
+            </tr>
+          </tbody>
+        </table>
+        <a class="button button-submit" href="#">Request now</a>
+        <a class="button button-reset" href="#">Cancel</a>
+      </div>
     </div>
   </div>
   </main>
@@ -83,5 +119,8 @@
       </ul>
     </nav>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
