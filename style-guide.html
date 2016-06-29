@@ -3,35 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WildPacks Style Guide</title>
+  <title>WildPacks - Style Guide</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
   <section class="header fixed">
-    <header class="header-logo">
-      <a href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+    <header class="container">
+      <a class="header-logo" href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+      <nav class="header-nav nav-main">
+        <ul>
+          <li><a class="header-link" href="index.html">Home</a></li>
+          <li><a class="header-link" href="shop.html">Shop</a></li>
+          <li><a class="header-link" href="events.html">Events</a></li>
+          <li><a class="header-link" href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <nav class="header-nav nav-secondary">
+        <ul>
+          <li><input class="search-bar" type="search" placeholder="Find a product or event"></li>
+          <li><a class="header-link-icon icon-search" href="#"></a></li>
+          <li><a class="header-link-icon icon-cart" href="cart.html"><span class="badge hidden"></span></a></li>
+        </ul>
+      </nav>
     </header>
-    <nav class="header-nav nav-main">
-      <ul>
-        <li><a class="header-link active" href="index.html">Home</a></li>
-        <li><a class="header-link" href="shop.html">Shop</a></li>
-        <li><a class="header-link" href="events.html">Events</a></li>
-        <li><a class="header-link" href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <nav class="header-nav nav-secondary">
-      <ul>
-        <li><input class="search-bar" type="search" placeholder="Find a product or event"></li>
-        <li><a class="header-link-icon icon-search" href="#"></a></li>
-        <li><a class="header-link-icon icon-cart" href="cart.html"><span class="badge hidden"></span></a></li>
-      </ul>
-    </nav>
   </section>
 
-  <section class="overview">
-    <header class="section-header">
+  <section class="overview top">
+    <header class="container">
       <h1>WildPacks Style Guide</h1>
       <p>WildPacks is a reliable and trustworthy backpack company that curates and sells the highest quality utilitarian backpacks for the explorer. Aside from selling backpacks, they also offer expert advice and hosts community events such as hiking events, camping events,photography walks to help showcase their products. On the website, customers are given the option to request a trial at an upcoming commmunity event. This not only helps build the brand tribe and community, but also allows customers to test out the backpacks in context.Products showcase all the features in the bag in order to help customers make the most informed purchase. </p>
       <h3>Target Audience</h3>
@@ -42,7 +42,7 @@
       <figure><img src="img/swatches.png" alt="color swatches for this brand"></figure>
     </header>
 
-    <nav class="overview-nav">
+    <nav class="container overview-nav">
       <p>Table of Contents:</p>
       <ul>
         <li><a class="overview-link" href="#interactive">Interactive Elements</a></li>
@@ -51,7 +51,8 @@
       </ul>
     </nav>
   </section>
-
+  
+  <main class="container">
   <!-- INTERACTIVE ELEMENTS SECTION // -->
   <section class="elements" id="interactive">
     <header class="section-header">
@@ -248,44 +249,46 @@
 
       <h4>Sample code:</h4>
       <pre><code>&lt;section class="header"&gt;
-  &lt;header class="header-logo"&gt;
-    &lt;a href="index.html"&gt;&lt;img src="img/logo.png" alt="Wild Wallets"&gt;&lt;/a&gt;
+  &lt;header class="container"&gt;
+    &lt;a class="header-logo" href="index.html"&gt;&lt;img src="img/logo.png" alt="WildPacks"&gt;&lt;/a&gt;
+    &lt;nav class="header-nav nav-main"&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a class="header-link" href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="header-link" href="shop.html"&gt;Shop&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="header-link" href="events.html"&gt;Events&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="header-link" href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;nav class="header-nav nav-secondary"&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;input class="search-bar" type="search" placeholder="Find a product or event"&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="header-link-icon icon-search" href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="header-link-icon icon-cart" href="cart.html"&gt;&lt;span class="badge hidden"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
   &lt;/header&gt;
-  &lt;nav class="header-nav nav-main"&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a class="header-link active" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a class="header-link" href="#"&gt;Shop&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a class="header-link" href="#"&gt;Events&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a class="header-link" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/nav&gt;
-  &lt;nav class="header-nav nav-secondary"&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a class="header-link-icon" href="#"&gt;&lt;img src="img/icon-search.svg" alt="Search"&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a class="header-link-icon" href="#"&gt;&lt;img src="img/icon-cart.svg" alt="Your Cart"&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/nav&gt;
 &lt;/section&gt;</code></pre>
       
       <h4>Rendered element:</h4>
       <section class="header">
-        <header class="header-logo">
-          <a href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+        <header class="container">
+          <a class="header-logo" href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+          <nav class="header-nav nav-main">
+            <ul>
+              <li><a class="header-link" href="index.html">Home</a></li>
+              <li><a class="header-link" href="shop.html">Shop</a></li>
+              <li><a class="header-link" href="events.html">Events</a></li>
+              <li><a class="header-link" href="about.html">About</a></li>
+            </ul>
+          </nav>
+          <nav class="header-nav nav-secondary">
+            <ul>
+              <li><input class="search-bar" type="search" placeholder="Find a product or event"></li>
+              <li><a class="header-link-icon icon-search" href="#"></a></li>
+              <li><a class="header-link-icon icon-cart" href="cart.html"><span class="badge hidden"></span></a></li>
+            </ul>
+          </nav>
         </header>
-        <nav class="header-nav nav-main">
-          <ul>
-            <li><a class="header-link active" href="#">Home</a></li>
-            <li><a class="header-link" href="#">Shop</a></li>
-            <li><a class="header-link" href="#">Events</a></li>
-            <li><a class="header-link" href="#">About</a></li>
-          </ul>
-        </nav>
-        <nav class="header-nav nav-secondary">
-          <ul>
-            <li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
-            <li><a class="header-link-icon" href="#"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
-          </ul>
-        </nav>
       </section>
     </article>
 
@@ -446,6 +449,7 @@
     </article>
   </section>
   <!-- // COMBINED ELEMENTS SECTION -->
+  </main>
 
   <footer class="footer">
     <nav class="footer-nav container">
@@ -458,7 +462,7 @@
       </ul>
     </nav>
   </footer>
-  
+
   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
   <script src="js/main.js"></script>
 </body>
