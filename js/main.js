@@ -24,6 +24,13 @@ $(document).ready(function(){
 	});
 
 	// ===== Product pages ===== //
+	// Image swapping
+	$('.thumbnail-row .thumbnail').click(function(e){
+		e.preventDefault();
+		var $img = $(this).children().attr('src');
+		$('.product-image > img').attr('src', $img);
+	})
+
 	// Add to cart interaction
 	$('.js-add-to-cart').click(function(event){
 		event.preventDefault();
