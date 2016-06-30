@@ -48,7 +48,7 @@
 	float: left;
 	width: 100%; /* Make all grid elements fit the whole width by default */
 	padding: 0;
-	padding-right: 1rem;
+	padding-right: 1.5rem;
 }
 
 /* Mobile first grid */
@@ -194,7 +194,7 @@
 .header-nav.nav-secondary {
 	flex-grow: 1;
 	/*flex-shrink: 1;*/
-	flex-basis: 40%;
+	flex-basis: 60%;
 	text-align: right;
 }
 

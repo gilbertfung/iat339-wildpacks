@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Wildpacks - Events</title>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -20,9 +21,10 @@
 		</nav>
 		<nav class="header-nav nav-secondary">
 			<ul>
-				<li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
-				<li><a class="header-link-icon" href="#"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
-			</ul>
+	          	<li><input class="search-bar" type="search" placeholder="Find a product or event"></li>
+	          	<li><a class="header-link-icon icon-search" href="#"></a></li>
+	          	<li><a class="header-link-icon icon-cart" href="cart.html"><span class="badge hidden"></span></a></li>
+	        </ul>
 		</nav>
 		</header>		
 	</section>
@@ -111,5 +113,7 @@
     </nav>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

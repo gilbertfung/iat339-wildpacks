@@ -22,8 +22,9 @@
       </nav>
       <nav class="header-nav nav-secondary">
         <ul>
-          <li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
-          <li><a class="header-link-icon" href="cart.html"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
+          <li><input class="search-bar" type="search" placeholder="Find a product or event"></li>
+          <li><a class="header-link-icon icon-search" href="#"></a></li>
+          <li><a class="header-link-icon icon-cart" href="cart.html"><span class="badge hidden"></span></a></li>
         </ul>
       </nav>
     </header>
@@ -49,13 +50,13 @@
           <fieldset>
             <legend>Categories</legend>
             <select name="type" id="filter-occasion">
-              <option disabled selected>Select an occasion</option>
+              <option selected>All occasions</option>
               <option>Everyday use</option>
               <option>Travelling</option>
               <option>Outdoor adventure</option>
             </select>
             <select name="type" id="filter-type">
-              <option disabled selected>Select a backpack type</option>
+              <option selected>All backpack types</option>
               <option>Backpack</option>
               <option>Messenger bag</option>
               <option>Duffel bag</option>
@@ -181,5 +182,8 @@
       </ul>
     </nav>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

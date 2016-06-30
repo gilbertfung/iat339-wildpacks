@@ -2,39 +2,41 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>WildPacks Sitemap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WildPacks - Sitemap</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
   <section class="header fixed">
-    <header class="header-logo">
-      <a href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+    <header class="container">
+      <a class="header-logo" href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+      <nav class="header-nav nav-main">
+        <ul>
+          <li><a class="header-link" href="index.html">Home</a></li>
+          <li><a class="header-link" href="shop.html">Shop</a></li>
+          <li><a class="header-link" href="events.html">Events</a></li>
+          <li><a class="header-link" href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <nav class="header-nav nav-secondary">
+        <ul>
+          <li><input class="search-bar" type="search" placeholder="Find a product or event"></li>
+          <li><a class="header-link-icon icon-search" href="#"></a></li>
+          <li><a class="header-link-icon icon-cart" href="cart.html"><span class="badge hidden"></span></a></li>
+        </ul>
+      </nav>
     </header>
-    <nav class="header-nav nav-main">
-      <ul>
-        <li><a class="header-link" href="index.html">Home</a></li>
-        <li><a class="header-link" href="shop.html">Shop</a></li>
-        <li><a class="header-link" href="events.html">Events</a></li>
-        <li><a class="header-link" href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <nav class="header-nav nav-secondary">
-      <ul>
-        <li><a class="header-link-icon" href="#"><img src="img/icon-search.svg" alt="Search"></a></li>
-        <li><a class="header-link-icon active" href="cart.html"><img src="img/icon-cart.svg" alt="Your Cart"></a></li>
-      </ul>
-    </nav>
   </section>
 
-  <section class="overview">
-    <header class="section-header">
+  <section class="overview top">
+    <header class="container">
       <h1>Sitemap</h1>
     </header>
   </section>
 
-  <section class="elements">
+  <main class="container">
     <header class="section-header">
       <h2>Sitemap:</h2> 
     </header>
@@ -97,7 +99,7 @@
         </ul>
       </ul>
     </article>
-  </section>
+  </main>
 
   <footer class="footer">
     <nav class="footer-nav container">
@@ -110,5 +112,8 @@
       </ul>
     </nav>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
