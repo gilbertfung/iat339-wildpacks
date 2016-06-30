@@ -201,8 +201,35 @@ input.search-bar {
 
 /* Overview */
 .overview {
-  background: rgba(0,0,0,0.8);
+  /*background: rgba(0,0,0,0.8);*/
   color: white;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+/*  -webkit-filter: blur(5px);  Chrome, Safari, Opera 
+  filter: blur(5px);*/
+}
+
+.overview-home {
+  background: url("../img/hero/home-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+} 
+
+.overview-shop {
+  background: url("../img/hero/bags-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.overview-events {
+  background: url("../img/hero/events-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.overview-about {
+  background: url("../img/hero/about-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .event-header {
