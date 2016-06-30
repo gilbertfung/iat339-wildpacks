@@ -201,19 +201,26 @@ input.search-bar {
 
 .overview-home {
   background: url("../img/hero/home-hero.jpg");
-  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
 } 
 
 .overview-shop {
   background: url("../img/hero/bags-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .overview-events {
   background: url("../img/hero/events-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .overview-about {
   background: url("../img/hero/about-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .event-header {
