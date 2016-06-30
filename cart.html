@@ -31,38 +31,39 @@
   </section>
 
   <main class="container top">
-    <h1>Your Cart</h1>
-    <div class="cart-listing">
-    <table>
-      <thead>
-        <tr>
-          <th>Image</th>
-          <th>Product description</th>
-          <th>Quantity</th>
-          <th>Price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a class="thumbnail" href="#"><img src="img/products/topo_bag1.jpg" alt="a backpack"></a></td>
-          <td><h3>Rugged Pack</h3></td>
-          <td>1</td>
-          <td>$165.00</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th>Subtotal</th>
-          <th></th>
-          <th></th>
-          <th>$165.00</th>
-        </tr>
-      </tfoot>
-    </table>
+    <div class="grid">
+      <div class="grid-md-2-12">&nbsp;</div>
+      <div class="grid-xs-12-12 grid-md-8-12">
+        <h1>Your Cart</h1>
+        <table class="cart-listing">
+          <thead>
+            <tr>
+              <th class="t-image">Image</th>
+              <th class="t-pname">Product</th>
+              <th class="t-quant">Quantity</th>
+              <th class="t-price">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="product-1">
+              <td class="t-image"><a class="thumbnail" href="#"><img src="img/products/topo_bag1.jpg" alt="a backpack"></a></td>
+              <td class="t-pname"><h3>Rugged Pack</h3></td>
+              <td class="t-quant"><input type="number" min="1" max="10" value="1"><br><a class="js-remove-product" href="#">Delete</a></td>
+              <td class="t-price">$165.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th class="t-image">Subtotal</th>
+              <th class="t-pname"></th>
+              <th class="t-quant"></th>
+              <th class="t-price">$165.00</th>
+            </tr>
+          </tfoot>
+        </table>
+        <p><a class="button button-submit" href="cart-checkout.html">Proceed to checkout</a></p>
+      </div>
     </div>
-    <p>
-      <a class="button button-submit" href="cart-checkout.html">Proceed to checkout</a>
-    </p>
   </main>
   
   <footer class="footer">
