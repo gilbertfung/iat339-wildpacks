@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <section class="header fixed">
-    <header class="container">
+  <header class="header fixed">
+    <div class="container">
       <a class="header-logo" href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
       <nav class="header-nav nav-main">
         <ul>
@@ -27,8 +27,8 @@
           <li><a class="header-link-icon icon-cart" href="cart.html"><span class="badge hidden"></span></a></li>
         </ul>
       </nav>
-    </header>
-  </section>
+    </div>
+  </header>
 
   <section class="overview top">
     <header class="container">
@@ -248,8 +248,8 @@
       <h3>Main Navigation</h3>
 
       <h4>Sample code:</h4>
-      <pre><code>&lt;section class="header"&gt;
-  &lt;header class="container"&gt;
+      <pre><code>&lt;header class="header"&gt;
+  &lt;div class="container"&gt;
     &lt;a class="header-logo" href="index.html"&gt;&lt;img src="img/logo.png" alt="WildPacks"&gt;&lt;/a&gt;
     &lt;nav class="header-nav nav-main"&gt;
       &lt;ul&gt;
@@ -266,12 +266,12 @@
         &lt;li&gt;&lt;a class="header-link-icon icon-cart" href="cart.html"&gt;&lt;span class="badge hidden"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/nav&gt;
-  &lt;/header&gt;
-&lt;/section&gt;</code></pre>
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
       
       <h4>Rendered element:</h4>
-      <section class="header">
-        <header class="container">
+      <header class="header">
+        <div class="container">
           <a class="header-logo" href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
           <nav class="header-nav nav-main">
             <ul>
@@ -288,8 +288,8 @@
               <li><a class="header-link-icon icon-cart" href="cart.html"><span class="badge hidden"></span></a></li>
             </ul>
           </nav>
-        </header>
-      </section>
+        </div>
+      </header>
     </article>
 
     <article>
@@ -298,127 +298,130 @@
       <h4>Sample code:</h4>
       <pre><code>&lt;div class="grid"&gt;
   &lt;div class="grid-md-3-12"&gt;
-    &lt;h4&gt;Filter:&lt;/h4&gt;
-    &lt;form action="#" class="form-filter"&gt;
-      &lt;input type="checkbox" name="filter-waterproof" id="filter-waterproof"&gt;&lt;label for="filter-waterproof"&gt;Waterproof&lt;/label&gt;&lt;br&gt;
-      &lt;input type="checkbox" name="filter-laptop" id="filter-laptop"&gt;&lt;label for="filter-laptop"&gt;Supports laptop&lt;/label&gt;&lt;br&gt;
-      &lt;input type="checkbox" name="filter-straps" id="filter-straps"&gt;&lt;label for="filter-straps"&gt;Straps&lt;/label&gt;&lt;br&gt;
-      &lt;input type="checkbox" name="filter-straps" id="filter-straps"&gt;&lt;label for="filter-straps"&gt;Device pocket&lt;/label&gt;&lt;br&gt;
-      &lt;select name="type" id="filter-type"&gt;
-        &lt;option disabled selected&gt;Select Type&lt;/option&gt;
-        &lt;option&gt;here is a filter&lt;/option&gt;
-        &lt;option&gt;here is a filter&lt;/option&gt;
-        &lt;option&gt;here is a filter&lt;/option&gt;
-      &lt;/select&gt;&lt;br&gt;
-      &lt;select name="type" id="filter-type"&gt;
-        &lt;option disabled selected&gt;Select Type&lt;/option&gt;
-        &lt;option&gt;here is a filter&lt;/option&gt;
-        &lt;option&gt;here is a filter&lt;/option&gt;
-        &lt;option&gt;here is a filter&lt;/option&gt;
-      &lt;/select&gt;
+    &lt;input type="checkbox" name="toggle" id="filter-toggle" /&gt;
+    &lt;label for="filter-toggle" class="button button-submit"&gt;Toggle Filter&lt;/label&gt;
+
+    &lt;form action="#" method="GET" class="form-filter"&gt;
+      &lt;h3&gt;Search:&lt;/h3&gt;
+      &lt;input type="search" id="filter-search" name="filter-search" placeholder="Find a backpack"&gt;
+
+      &lt;h3&gt;Filter:&lt;/h3&gt;
+      &lt;fieldset&gt;
+        &lt;legend&gt;Categories&lt;/legend&gt;
+        &lt;select name="type" id="filter-occasion"&gt;
+          &lt;option selected&gt;All occasions&lt;/option&gt;
+          &lt;option&gt;Everyday use&lt;/option&gt;
+          &lt;option&gt;Travelling&lt;/option&gt;
+          &lt;option&gt;Outdoor adventure&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;select name="type" id="filter-type"&gt;
+          &lt;option selected&gt;All backpack types&lt;/option&gt;
+          &lt;option&gt;Backpack&lt;/option&gt;
+          &lt;option&gt;Messenger bag&lt;/option&gt;
+          &lt;option&gt;Duffel bag&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/fieldset&gt;
+      &lt;input type="submit" id="filter-submit" value="Filter" class="button button-submit"&gt;
     &lt;/form&gt;
   &lt;/div&gt;
   &lt;div class="grid-md-9-12 listings"&gt;
-    &lt;div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12"&gt;
-      &lt;a class="listing-item" href="#"&gt;
-        &lt;figure&gt;
-          &lt;img src="img/products/topo_bag1.jpg" alt=""&gt;
-          &lt;h4&gt;Backpack 01&lt;/h4&gt;
-          &lt;p&gt;$165&lt;/p&gt;
-        &lt;/figure&gt;
-      &lt;/a&gt;
+    &lt;div class="grid"&gt;
+      &lt;div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12"&gt;
+        &lt;a class="listing-item" href="shop-backpack-rugged.html"&gt;
+          &lt;figure&gt;
+            &lt;img src="img/products/topo_bag1.jpg" alt="a backpack"&gt;
+            &lt;h4&gt;Rugged Pack&lt;/h4&gt;
+            &lt;p&gt;$139&lt;/p&gt;
+          &lt;/figure&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12"&gt;
+        &lt;a class="listing-item" href="shop-backpack-everyday.html"&gt;
+          &lt;figure&gt;
+            &lt;img src="img/products/topo_bag2.jpg" alt="a backpack"&gt;
+            &lt;h4&gt;Everyday Pack&lt;/h4&gt;
+            &lt;p&gt;$149&lt;/p&gt;
+          &lt;/figure&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12"&gt;
+        &lt;a class="listing-item" href="shop-backpack-knapsack.html"&gt;
+          &lt;figure&gt;
+            &lt;img src="img/products/topo_bag3.jpg" alt="a backpack"&gt;
+            &lt;h4&gt;Knapsack&lt;/h4&gt;
+            &lt;p&gt;$169&lt;/p&gt;
+          &lt;/figure&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-    ....
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
       
       <h4>Rendered element:</h4>
-      <div class="grid">
-        <div class="grid-md-3-12">
-          <h4>Filter:</h4>
-          <form action="#" class="form-filter">
-            <input type="checkbox" name="filter-waterproof" id="filter-waterproof"><label for="filter-waterproof">Waterproof</label><br>
-            <input type="checkbox" name="filter-laptop" id="filter-laptop"><label for="filter-laptop">Supports laptop</label><br>
-            <input type="checkbox" name="filter-straps" id="filter-straps"><label for="filter-straps">Straps</label><br>
-            <input type="checkbox" name="filter-straps" id="filter-straps"><label for="filter-straps">Device pocket</label><br>
-            <select name="type" id="filter-type">
-              <option disabled selected>Select Type</option>
-              <option>here is a filter</option>
-              <option>here is a filter</option>
-              <option>here is a filter</option>
-            </select><br>
-            <select name="type" id="filter-type">
-              <option disabled selected>Select Type</option>
-              <option>here is a filter</option>
-              <option>here is a filter</option>
-              <option>here is a filter</option>
-            </select>
-          </form>
-        </div>
-        <div class="grid-md-9-12 listings">
-          <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-            <a class="listing-item" href="#">
-              <figure>
-                <img src="img/products/topo_bag1.jpg" alt="a backpack">
-                <h4>Backpack 01</h4>
-                <p>$165</p>
-              </figure>
-            </a>
+        <div class="grid">
+          <div class="grid-md-3-12">
+            <input type="checkbox" name="toggle" id="filter-toggle" />
+            <label for="filter-toggle" class="button button-submit">Toggle Filter</label>
+
+            <form action="#" method="GET" class="form-filter">
+              <h3>Search:</h3>
+              <input type="search" id="filter-search" name="filter-search" placeholder="Find a backpack">
+
+              <h3>Filter:</h3>
+              <fieldset>
+                <legend>Categories</legend>
+                <select name="type" id="filter-occasion">
+                  <option selected>All occasions</option>
+                  <option>Everyday use</option>
+                  <option>Travelling</option>
+                  <option>Outdoor adventure</option>
+                </select>
+                <select name="type" id="filter-type">
+                  <option selected>All backpack types</option>
+                  <option>Backpack</option>
+                  <option>Messenger bag</option>
+                  <option>Duffel bag</option>
+                </select>
+              </fieldset>
+              <input type="submit" id="filter-submit" value="Filter" class="button button-submit">
+            </form>
           </div>
-          <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-            <a class="listing-item" href="#">
-              <figure>
-                <img src="img/products/topo_bag2.jpg" alt="a backpack">
-                <h4>Backpack 02</h4>
-                <p>$165</p>
-              </figure>
-            </a>
-          </div>
-          <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-            <a class="listing-item" href="#">
-              <figure>
-                <img src="img/products/topo_bag3.jpg" alt="a backpack">
-                <h4>Backpack 03</h4>
-                <p>$165</p>
-              </figure>
-            </a>
-          </div>
-          <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-            <a class="listing-item" href="#">
-              <figure>
-                <img src="img/products/topo_bag1.jpg" alt="a backpack">
-                <h4>Backpack 04</h4>
-                <p>$165</p>
-              </figure>
-            </a>
-          </div>
-          <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-            <a class="listing-item" href="#">
-              <figure>
-                <img src="img/products/topo_bag2.jpg" alt="a backpack">
-                <h4>Backpack 05</h4>
-                <p>$165</p>
-              </figure>
-            </a>
-          </div>
-          <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
-            <a class="listing-item" href="#">
-              <figure>
-                <img src="img/products/topo_bag3.jpg" alt="a backpack">
-                <h4>Backpack 06</h4>
-                <p>$165</p>
-              </figure>
-            </a>
+          <div class="grid-md-9-12 listings">
+            <div class="grid">
+              <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
+                <a class="listing-item" href="shop-backpack-rugged.html">
+                  <figure>
+                    <img src="img/products/topo_bag1.jpg" alt="a backpack">
+                    <h4>Rugged Pack</h4>
+                    <p>$139</p>
+                  </figure>
+                </a>
+              </div>
+              <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
+                <a class="listing-item" href="shop-backpack-everyday.html">
+                  <figure>
+                    <img src="img/products/topo_bag2.jpg" alt="a backpack">
+                    <h4>Everyday Pack</h4>
+                    <p>$149</p>
+                  </figure>
+                </a>
+              </div>
+              <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
+                <a class="listing-item" href="shop-backpack-knapsack.html">
+                  <figure>
+                    <img src="img/products/topo_bag3.jpg" alt="a backpack">
+                    <h4>Knapsack</h4>
+                    <p>$169</p>
+                  </figure>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </article>
     
     <article>
       <h3>Grid Structure</h3>
-
-      <h4>Example (for customization and in general):</h4>
-      <figure><img src="img/grids.jpg" alt=""></figure>
 
       <h4>Sample code (for product listing):</h4>
       <pre><code>
