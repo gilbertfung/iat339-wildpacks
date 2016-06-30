@@ -40,6 +40,12 @@
   padding-top: 6rem;
 }
 
+@media(max-width: 38rem) {
+  .top {
+    padding-top: 1.5rem;
+  }
+}
+
 .event-sidebar {
   padding-top: 6.5rem;
 }
@@ -57,6 +63,9 @@
 }
 
 @media(max-width: 38rem) {
+  .header.fixed {
+    position: initial;
+  }
   .nav-main {
     flex-grow: 2;
     order: 2;
@@ -515,6 +524,11 @@ cite {
 }
 
 /* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+}
+
 .footer-nav {
   margin-top: 4rem;
   font-size: 0.8rem;
