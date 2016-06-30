@@ -202,25 +202,31 @@ input.search-bar {
 .overview-home {
   background: url("../img/hero/home-hero.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: 50%;
 } 
 
 .overview-shop {
   background: url("../img/hero/bags-hero.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: 50%;
+
 }
 
 .overview-events {
   background: url("../img/hero/events-hero.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: 50%;
+
 }
 
 .overview-about {
   background: url("../img/hero/about-hero.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: 50%;  
 }
 
 .event-header {
