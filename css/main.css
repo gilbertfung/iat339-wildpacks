@@ -86,7 +86,7 @@ body {
   }
 }
 
-.header header {
+.header .container {
   -webkit-display: flex;
   display: flex;
   width: 100%;
