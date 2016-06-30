@@ -54,6 +54,7 @@
   background: rgba(255,255,255,1);
   /*padding: 0 4rem;*/
   box-shadow: 0 0 0.5rem #666;
+  z-index: 99999;
 }
 
 @media(max-width: 38rem) {
@@ -337,6 +338,17 @@ input.search-bar {
   margin: 0;
   margin-bottom: 2rem;
   line-height: 1;
+  transition: all 0.3s;
+
+}
+
+.listing-item:hover img{
+  /*opacity: 0.8;*/
+}
+
+.listing-item:hover figure{
+  transform: scale(1.025);
+  box-shadow: 0 0 10px #ccc;
 }
 
 .listing-item h4 {
