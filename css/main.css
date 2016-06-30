@@ -15,6 +15,15 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 4rem 0;
+}
+
 .active {
   border-bottom: solid 2px #79BD9A;
   font-weight: bold;
@@ -537,12 +546,16 @@ cite {
 
 /* Footer */
 .footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: #333;
   color: white;
 }
 
 .footer-nav {
-  margin-top: 4rem;
+  /*margin-top: 4rem;*/
   font-size: 0.8rem;
 }
 
