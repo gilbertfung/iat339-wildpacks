@@ -55,4 +55,12 @@ $(document).ready(function(){
 			$requestTrial.after('<p>Request submitted!<p/>')
 		}
 	});
+
+	// ===== Cart Pages ===== //
+	// Remove Product from cart
+	$('.js-remove-product').click(function(event){
+		event.preventDefault();
+		$product = $('tr.product-1');
+		$product.addClass('hidden');
+	});
 });

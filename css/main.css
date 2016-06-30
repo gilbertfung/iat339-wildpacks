@@ -387,11 +387,16 @@ input.search-bar {
 .request-trial {
   margin: 1rem 0;
   border: solid 0.1rem #ccc;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   padding: 0 1rem 1rem;
 }
 
+.request-trial a {
+  margin-bottom: 0;
+}
+
 .event-listing {
+  font-size: 0.9rem;
 }
 
 .event-listing td {
@@ -409,14 +414,17 @@ input.search-bar {
   border: none;
 }
 
-.cart-listing {
-  overflow-x: scroll;
-  min-width: 32rem;
-}
-
 table {
   width: 100%;
+  table-layout: fixed;
   text-align: left;
+}
+
+@media (max-width: 30rem) {
+  table {
+    display: block;
+    overflow-x: scroll;
+  }
 }
 
 thead {
@@ -427,6 +435,7 @@ thead {
 
 tbody h3 {
   margin: 0;
+  padding-top: 0;
 }
 
 tfoot {
@@ -438,20 +447,49 @@ tr {
 }
 
 th {
-
+    padding: 0 4rem 0 0;
 }
 
-th:last-child {
+.t-image {
+  padding-right: 0;
+}
+
+.t-pname {
+  width: 45%;
+}
+
+.t-quant {
+  width: 15%;
+  text-align: center;
+}
+
+.t-price {
+  width: 15%;
+  padding-right: 0;
   text-align: right;
 }
+
+.t-event {
+  width: 30%;
+}
+
+.t-locat {
+  width: 35%;
+}
+
+.t-date  {
+  width: 20%;
+}
+
+.t-spots {
+  width: 15%;
+  padding-right: 0;
+}
+
 
 td {
-  padding: 1rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 0;
   vertical-align: top;
-}
-
-td:last-child {
-  text-align: right;
 }
 
 /* Citations Styles */
