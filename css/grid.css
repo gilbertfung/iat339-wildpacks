@@ -199,7 +199,7 @@
 }
 
 @media(max-width: 38rem) {
-	.header header {
+	.header .container {
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
 	}

@@ -1,86 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>WildPacks - About Us</title>
-	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+  <title>WildPacks - About Us</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 
-	<section class="header fixed">
-		<header class="container">
-      	<a class="header-logo" href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
+  <header class="header fixed">
+    <div class="container">
+          <a class="header-logo" href="index.html"><img src="img/logo.png" alt="WildPacks"></a>
 
-		<nav class="header-nav nav-main">
-			<ul>
-				<li><a class="header-link" href="index.html">Home</a></li>
-				<li><a class="header-link" href="shop.html">Shop</a></li>
-				<li><a class="header-link" href="events.html">Events</a></li>
-				<li><a class="header-link active" href="about.html">About</a></li>
-			</ul>
-		</nav>
-		<nav class="header-nav nav-secondary">
-			<ul>
-          		<li><input class="search-bar" type="search" placeholder="Find a product or event"></li>
-          		<li><a class="header-link-icon icon-search" href="#"></a></li>
-          		<li><a class="header-link-icon icon-cart" href="cart.html"><span class="badge hidden"></span></a></li>
-        	</ul>
-		</nav>
-		</header>	
-	</section>
+      <nav class="header-nav nav-main">
+        <ul>
+          <li><a class="header-link" href="index.html">Home</a></li>
+          <li><a class="header-link" href="shop.html">Shop</a></li>
+          <li><a class="header-link" href="events.html">Events</a></li>
+          <li><a class="header-link active" href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <nav class="header-nav nav-secondary">
+        <ul>
+                <li><input class="search-bar" type="search" placeholder="Find a product or event"></li>
+                <li><a class="header-link-icon icon-search" href="#"></a></li>
+                <li><a class="header-link-icon icon-cart" href="cart.html"><span class="badge hidden"></span></a></li>
+            </ul>
+      </nav>
+    </div>  
+  </header>
 
-	<div class="grid">
+  <section class="overview overview-about top">
+    <header class="container">
+      <h1>ABOUT US</h1>
+    </header>
+  </section>
+  
+  <main class="container">
+    <div class="grid">
+      <div class="grid-md-7-12">
+        <p>Message sent! We will get back to you shortly! :)</p>
+      </div>
 
-	<section class="overview top">
-	<header  class="container">
-	<h1>ABOUT US</h1>
-	</header>
-	</section>
-	
-	<main class="container">
-	<section class="grid-md-7-12">
-		<article class="">
-			<p>Message sent! We will get back to you shortly! :)</p>
-		</article>
-	</section>
+      <section class="grid-md-5-12 contact-section">
+        <h2>CONTACT US</h2>
+        <form action="#" method="post">
+              <label for="contact-name">Name:</label>
+              <br>
+              <input type="text" id="contact-name" placeholder="Enter your name here">
+               <br>
+              <label for="contact-email">Email:</label>
+              <br>
+              <input type="text" id="contact-email" placeholder="Enter your email here">
+               <br>
 
-	<section class="grid-md-5-12 contact-section">
-	<article>
-	<h2>CONTACT US</h2>
-		<form action="#" method="post">
-        <label for="contact-name">Name:</label>
-        <br>
-        <input type="text" id="contact-name" placeholder="Enter your name here">
-         <br>
-        <label for="contact-email">Email:</label>
-        <br>
-        <input type="text" id="contact-email" placeholder="Enter your email here">
-         <br>
+              <label for="contact-message">Message:</label>
+              <br>
+              <textarea id="contact-message" placeholder="Enter your message here"></textarea>     
+               <br>  
+          <a href="#" class="button button-submit">Send message</a>   
+        </form>
+      </section>
+    </div>
+  </main>
 
-        <label for="contact-message">Message:</label>
-        <br>
-        <textarea id="contact-message" placeholder="Enter your message here"></textarea>     
-         <br>  
-		<a href="#" class="button button-submit">Send message</a>		
-		</form>
-	</article>
-	</section>
-	</div>
-	</main>
-
-  <section class="footer container">
-    <nav class="footer-nav">
-      <footer>Made by Edward Chen and Gilbert Fung</footer>
+  <footer class="footer">
+    <nav class="footer-nav container">
       <ul>
+        <li>Made by Edward Chen and Gilbert Fung</li>
         <li><a href="style-guide.html">Style Guide</a></li>
         <li><a href="sitemap.html">Sitemap</a></li>
         <li><a href="citations.html">Citations</a></li>
         <li><a href="https://github.com/gilbertfung/iat339-wildpacks">GitHub Repository</a></li>
       </ul>
     </nav>
-  </section>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
   <script src="js/main.js"></script>
