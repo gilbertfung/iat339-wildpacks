@@ -194,7 +194,7 @@
 .header-nav.nav-secondary {
 	flex-grow: 1;
 	/*flex-shrink: 1;*/
-	flex-basis: 60%;
+	flex-basis: 55%;
 	text-align: right;
 }
 
