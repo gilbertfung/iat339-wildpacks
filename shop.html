@@ -4,8 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WildPacks - Shop</title>
+  <link href='https://fonts.googleapis.com/css?family=Rubik:300,300italic,400,400italic,700italic,700' rel='stylesheet' type='text/css' data-norem>
+  <link href='https://fonts.googleapis.com/css?family=Martel+Sans:400,300,600,700,800' rel='stylesheet' type='text/css' data-norem>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+
+  <!--[if IE]>
+    <script src="js/html5shiv.min.js"></script>
+  <![endif]-->
 </head>
 
 <body>
@@ -170,8 +176,13 @@
       </div>
     </div>
   </main>
-  
+
+<!--[if IE]>
+  <footer class="footer ie8">
+<![endif]-->
+<!--[if !IE]><!-->
   <footer class="footer">
+<!--<![endif]-->
     <nav class="footer-nav container">
       <ul>
         <li>Made by Edward Chen and Gilbert Fung</li>
@@ -183,7 +194,14 @@
     </nav>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <!--[if IE]>
+    <script src="js/rem.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <![endif]-->
+<!--[if !IE]><!-->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <!--<![endif]-->
   <script src="js/main.js"></script>
 </body>
 </html>

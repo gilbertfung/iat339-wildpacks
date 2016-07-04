@@ -4,8 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wildpacks - Home</title>
+  <link href='https://fonts.googleapis.com/css?family=Rubik:300,300italic,400,400italic,700italic,700' rel='stylesheet' type='text/css' data-norem>
+  <link href='https://fonts.googleapis.com/css?family=Martel+Sans:400,300,600,700,800' rel='stylesheet' type='text/css' data-norem>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+
+  <!--[if IE]>
+    <script src="js/html5shiv.min.js"></script>
+  <![endif]-->
 </head>
 <body>
 
@@ -48,6 +54,7 @@
             </figure>
           </a>
         </div>
+
         <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
           <a class="listing-item" href="shop.html">
             <figure class="listing-item">
@@ -56,6 +63,7 @@
             </figure>
           </a>
         </div>
+
         <div class="grid-xs-12-12 grid-sm-6-12 grid-md-4-12">
           <a class="listing-item" href="about.html">        
             <figure class="listing-item">
@@ -77,6 +85,7 @@
             </figure>
           </a>
         </div>
+
         <div class="grid-xs-12-12 grid-sm-6-12 grid-md-3-12">
           <a class="listing-item" href="shop-backpack-everyday.html">
             <figure class="listing-item">
@@ -86,6 +95,7 @@
             </figure>
           </a>
         </div>
+
         <div class="grid-xs-12-12 grid-sm-6-12 grid-md-3-12">
           <a class="listing-item" href="shop-backpack-knapsack.html">     
             <figure class="listing-item">
@@ -94,7 +104,8 @@
               <p>$169</p>
             </figure>
           </a>
-        </div>  
+        </div>
+          
         <div class="grid-xs-12-12 grid-sm-6-12 grid-md-3-12">
           <a class="listing-item" href="shop-backpack-rugged.html">       
             <figure class="listing-item">
@@ -107,21 +118,32 @@
       </div>  
     </article>
   </main>
-</section>
 
-<footer class="footer">
-  <nav class="footer-nav container">
-    <ul>
-      <li>Made by Edward Chen and Gilbert Fung</li>
-      <li><a href="style-guide.html">Style Guide</a></li>
-      <li><a href="sitemap.html">Sitemap</a></li>
-      <li><a href="citations.html">Citations</a></li>
-      <li><a href="https://github.com/gilbertfung/iat339-wildpacks">GitHub Repository</a></li>
-    </ul>
-  </nav>
-</footer>
+<!--[if IE]>
+  <footer class="footer ie8">
+<![endif]-->
+<!--[if !IE]><!-->
+  <footer class="footer">
+<!--<![endif]-->
+    <nav class="footer-nav container">
+      <ul>
+        <li>Made by Edward Chen and Gilbert Fung</li>
+        <li><a href="style-guide.html">Style Guide</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="citations.html">Citations</a></li>
+        <li><a href="https://github.com/gilbertfung/iat339-wildpacks">GitHub Repository</a></li>
+      </ul>
+    </nav>
+  </footer>
 
-<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <!--[if IE]>
+    <script src="js/rem.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <![endif]-->
+<!--[if !IE]><!-->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <!--<![endif]-->
 <script src="js/main.js"></script>
 </body>
 

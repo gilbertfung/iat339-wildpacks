@@ -120,6 +120,6 @@ label[for="filter-toggle"] {
 	}
 
 	#filter-toggle:not(checked) ~ .form-filter {
-		display: initial;
+		display: block;
 	}
 }
