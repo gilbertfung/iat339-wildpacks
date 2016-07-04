@@ -24,6 +24,12 @@ body {
   margin: 0 0 4rem 0;
 }
 
+@media (max-width: 48rem) {
+  body {
+    margin: 0 0 6rem 0;
+  }
+}
+
 .active {
   border-bottom: solid 2px #79BD9A;
   font-weight: bold;
